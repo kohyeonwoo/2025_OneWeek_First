@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
 {
     public Transform target;
     public NavMeshAgent agent;
-   // private Animator anim;
+    private Animator anim;
    // private Rigidbody rigid;
 
     [SerializeField]
@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-     //   anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
      //   rigid = GetComponent<Rigidbody>();
 
         bMove = true;
@@ -69,7 +69,7 @@ public class Player : MonoBehaviour
             {
                 Debug.DrawRay(point, Vector3.up, Color.blue, 1.0f);
                 agent.SetDestination(point);
-               // anim.SetBool("bMove", true);
+                anim.SetBool("bMove", true);
             }
 
         }
