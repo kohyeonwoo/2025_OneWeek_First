@@ -6,8 +6,17 @@ public class GameManager : MonoBehaviour
 {
     void Start()
     {
-        AudioManager.Instance.PlayMusic("MenuMusic");        
+        StartMenuMusic();
     }
 
+    public void StartMenuMusic()
+    {
+        AudioManager.Instance.PlayMusic("MenuMusic");
+    }
     
+    public void StartOstMusic()
+    {
+        AudioManager.Instance.PlayMusic("MainOst1Music");
+    }
+
 }
