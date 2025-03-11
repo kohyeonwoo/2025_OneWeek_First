@@ -366,6 +366,10 @@
 -analyzer:"D:/ForUnity/UnitySource/Editor/2022.3.23f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/GameScene/AudioManager.cs"
 "Assets/Scripts/GameScene/CameraResolution.cs"
+"Assets/Scripts/GameScene/Enemy/Enemy.cs"
+"Assets/Scripts/GameScene/Enemy/Enemy_AttackState.cs"
+"Assets/Scripts/GameScene/Enemy/Enemy_ChaseState.cs"
+"Assets/Scripts/GameScene/Enemy/Enemy_IdleState.cs"
 "Assets/Scripts/GameScene/GameManager.cs"
 "Assets/Scripts/GameScene/ParticleManager.cs"
 "Assets/Scripts/GameScene/Player/AttackState.cs"
@@ -373,6 +377,7 @@
 "Assets/Scripts/GameScene/Player/IdleState.cs"
 "Assets/Scripts/GameScene/Player/PatrolState.cs"
 "Assets/Scripts/GameScene/Player/Player.cs"
+"Assets/Scripts/GameScene/Sound.cs"
 "Assets/Scripts/StartScene/StartSceneManager.cs"
 -langversion:9.0
 
