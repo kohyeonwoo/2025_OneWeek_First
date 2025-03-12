@@ -2,17 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, IDamageable
 {
-    // Start is called before the first frame update
-    void Start()
+
+    protected float maxHealth;
+    protected float currentHealth;
+
+    public Transform particleLocation;
+    public GameObject particle;
+
+    public void Damage(float Damage)
     {
-        
+        currentHealth -= Damage;
+
+        AudioManager.Instance.PlaySFX("EnemyHitSound");
+        GameObject obj = Instantiate(particle, particleLocation.position, Quaternion.identity);
+        Destroy(obj, 2.0f);
+
+        if (currentHealth <= 0)
+        {
+            Dead();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Dead()
     {
-        
+        this.gameObject.SetActive(false);
     }
+
 }
