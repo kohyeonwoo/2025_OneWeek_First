@@ -327,7 +327,7 @@ Animator:
   m_GameObject: {fileID: 1889655666586152953}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: a2cd2cbace323984280bd454427467b3, type: 3}
-  m_Controller: {fileID: 9100000, guid: 33f4b5babe5c48848971f21f4055159a, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8e8def24647ee194e8ee446ca354602d, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -422,17 +422,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2d1a2b72306ee7458bc8cdaa3470774, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   agent: {fileID: 7545323687233918662}
   attackCollision: {fileID: 6518562470408218281}
-  particle: {fileID: 0}
+  particle: {fileID: 5112403345868107898, guid: 6f34ef0d986e9db4199cf75805f79753, type: 3}
   particleLocation: {fileID: 8621059472232946646}
   anim: {fileID: 3442429234158240000}
   rigid: {fileID: 3379095625716318462}
-  bMove: 0
-  bAttack: 0
-  range: 3
-  centerPoint: {fileID: 0}
 --- !u!1 &1916194742854402858
 GameObject:
   m_ObjectHideFlags: 0
@@ -1598,7 +1593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d9cab287ded11f42bceac06a207e5b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 5
+  Damage: 7
 --- !u!1 &6661989126685741131
 GameObject:
   m_ObjectHideFlags: 0

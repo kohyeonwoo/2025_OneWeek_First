@@ -11,6 +11,14 @@ public class Enemy : MonoBehaviour, IDamageable
     public Transform particleLocation;
     public GameObject particle;
 
+    public virtual void EnemyActiveAttackCollision1() {}
+
+    public virtual void EnemyDeActiveAttackCollision1() {}
+
+    public virtual void EnemyActiveAttackCollision2() {}
+
+    public virtual void EnemyDeActiveAttackCollision2() {}
+
     public void Damage(float Damage)
     {
         currentHealth -= Damage;
@@ -29,5 +37,7 @@ public class Enemy : MonoBehaviour, IDamageable
     {
         this.gameObject.SetActive(false);
     }
+
+    
 
 }

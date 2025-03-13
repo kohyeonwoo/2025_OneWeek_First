@@ -1220,6 +1220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particleLocation: {fileID: 3505949399611245879}
   particle: {fileID: 5880797563127281583, guid: 265d3a5ba69981a4698ceabcedf368b0, type: 3}
+  attackCollision: {fileID: 2327515335633157270}
 --- !u!1 &2654970765739208743
 GameObject:
   m_ObjectHideFlags: 0

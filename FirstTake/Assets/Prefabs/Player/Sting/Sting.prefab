@@ -1060,17 +1060,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad19e9e9a556b354a8d51b2c62f04ae9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  agent: {fileID: 0}
+  agent: {fileID: 4100149399108029169}
   attackCollision: {fileID: 2830656744557907408}
-  particle: {fileID: 0}
+  particle: {fileID: 5112403345868107898, guid: 6f34ef0d986e9db4199cf75805f79753, type: 3}
   particleLocation: {fileID: 2791506245378030860}
   anim: {fileID: 4439527684712455637}
-  rigid: {fileID: 0}
-  bMove: 0
-  bAttack: 0
-  range: 0
-  centerPoint: {fileID: 0}
+  rigid: {fileID: 6682423501041756519}
 --- !u!1 &4473972139538968412
 GameObject:
   m_ObjectHideFlags: 0

@@ -282,8 +282,7 @@ Transform:
   m_LocalPosition: {x: 0.07258148, y: 0.38460112, z: -0.00000007488459}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1058894169488931606}
+  m_Children: []
   m_Father: {fileID: 4499595482890211519}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1900786746923789787
@@ -848,13 +847,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4682212239590369539}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000010969552, y: 0.00000006299571, z: 0.3337759, w: 0.9426524}
-  m_LocalPosition: {x: -0.89, y: -0.89, z: -0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 2.3883, y: 1, z: 5.955625}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1057948015995577631}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 38.996}
+  m_Father: {fileID: 1193516464796804276}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1826579821339234762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1274,6 +1273,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1058894169488931606}
   - {fileID: 1092420466831877441}
   - {fileID: 8301632964322812399}
   - {fileID: 4543758586714955595}
@@ -1305,7 +1305,7 @@ Animator:
   m_GameObject: {fileID: 7727390254607296626}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 66ca9bf0145725543a1e8a693589f362, type: 3}
-  m_Controller: {fileID: 9100000, guid: 4027a562aaab3634d9b56375f36feae6, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4264eec3292c7eb4fa48669e23da7c9e, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -1400,17 +1400,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3679f758e8f2388459ead5d4e97cdf23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   agent: {fileID: 5905369404161431996}
   attackCollision: {fileID: 4682212239590369539}
-  particle: {fileID: 0}
+  particle: {fileID: 5112403345868107898, guid: 6f34ef0d986e9db4199cf75805f79753, type: 3}
   particleLocation: {fileID: 6202566125973615450}
   anim: {fileID: 3987771132369693527}
   rigid: {fileID: 6921210367304236290}
-  bMove: 0
-  bAttack: 0
-  range: 0
-  centerPoint: {fileID: 0}
 --- !u!1 &7845478833186813760
 GameObject:
   m_ObjectHideFlags: 0

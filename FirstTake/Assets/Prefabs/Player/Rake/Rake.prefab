@@ -262,6 +262,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5cc7b56198602d840abd5ebc81af4911, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3592495798447321100}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5cc7b56198602d840abd5ebc81af4911, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7225465430947336376}
   m_SourcePrefab: {fileID: 100100000, guid: 5cc7b56198602d840abd5ebc81af4911, type: 3}
 --- !u!1 &604637820981358728 stripped
 GameObject:
@@ -361,6 +364,24 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &7225465430947336376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604637820981358728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caccb311ec97db145b99b7b3ab546ef2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 3592495798447321100}
+  attackCollision: {fileID: 6564893468238056621}
+  particle: {fileID: 5112403345868107898, guid: 6f34ef0d986e9db4199cf75805f79753, type: 3}
+  particleLocation: {fileID: 4300296689893822669}
+  anim: {fileID: 5804701925708402791}
+  rigid: {fileID: 5987359412419829380}
 --- !u!4 &2573195930317287611 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -6408438495188353694, guid: 5cc7b56198602d840abd5ebc81af4911, type: 3}
