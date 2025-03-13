@@ -18,7 +18,6 @@ public class ObjectPool : MonoBehaviour
         {
             SpawnObject();
         }
-
         
     }
 

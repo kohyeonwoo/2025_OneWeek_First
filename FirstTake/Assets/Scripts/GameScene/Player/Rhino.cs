@@ -10,8 +10,4 @@ public class Rhino : Player
         currentHealth = maxHealth;
     }
 
-    private void Update()
-    {
-        RandomMove();
-    }
 }

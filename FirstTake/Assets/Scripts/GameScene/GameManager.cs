@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -17,6 +18,20 @@ public class GameManager : MonoBehaviour
     public void StartOstMusic()
     {
         AudioManager.Instance.PlayMusic("MainOst1Music");
+    }
+
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene("GameScene");
+    }
+
+    public void Quit()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
     }
 
 }
