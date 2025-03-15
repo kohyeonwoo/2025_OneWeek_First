@@ -5,41 +5,25 @@ using UnityEngine;
 
 public class Player : MonoBehaviour, IDamageable
 {
-   // public Transform target; 
-    public NavMeshAgent agent;
+   // public Transform target;  
+    protected NavMeshAgent agent;
     public GameObject attackCollision;
     public GameObject particle;
+    public GameObject deadParticle;
     public Transform particleLocation;
 
     protected float maxHealth;
     protected float currentHealth;
 
-    public Animator anim;
-    public Rigidbody rigid;
+    protected Animator anim;
+    protected Rigidbody rigid;
 
-   // [SerializeField]
-   // private bool bMove;
-   // [SerializeField]
-   // private bool bAttack;
-
-   // private float timer;
-
-   // public float range;
-
-   // public Transform centerPoint;
-
-    private void Start()
+    protected void Init()
     {
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
         rigid = GetComponent<Rigidbody>();
-
-        //bMove = true;
-        //bAttack = false;
-
-        //target = GameObject.FindGameObjectWithTag("Player").transform;
     }
-
 
     public void ActiveAttackCollision()
     {
@@ -50,50 +34,6 @@ public class Player : MonoBehaviour, IDamageable
     {
         attackCollision.SetActive(false);
     }
-
-    //private void Attack()
-    //{
-    //    this.transform.LookAt(target);
-    //}
-
-    //public void RandomMove()
-    //{
-    //    if (agent.remainingDistance <= agent.stoppingDistance)
-    //    {
-    //        Vector3 point;
-
-    //        if (RandomPoint(centerPoint.position, range, out point))
-    //        {
-    //            Debug.DrawRay(point, Vector3.up, Color.blue, 1.0f);
-    //            agent.SetDestination(point);
-    //            anim.SetBool("bMove", true);
-    //            attackCollision.SetActive(true);
-    //        }
-    //        else
-    //        {
-    //            attackCollision.SetActive(false);
-    //        }
-
-    //    }
-    //}
-
-    //private bool RandomPoint(Vector3 center, float range, out Vector3 result)
-    //{
-
-    //    Vector3 randomPoint = center + Random.insideUnitSphere * range;
-
-    //    NavMeshHit hit;
-
-    //    if (NavMesh.SamplePosition(randomPoint, out hit, 1.0f, NavMesh.AllAreas))
-    //    {
-    //        result = hit.position;
-    //        return true;
-    //    }
-
-    //    result = Vector3.zero;
-    //    return false;
-
-    //}
 
     public void Damage(float Damage)
     {
@@ -111,8 +51,12 @@ public class Player : MonoBehaviour, IDamageable
 
     public void Dead()
     {
+        GameObject obj = Instantiate(deadParticle, particleLocation.position, Quaternion.identity);
+        Destroy(obj, 3.0f);
         // this.gameObject.SetActive(false);
         Destroy(this.gameObject);
+
+        GameManager.Instance.SetActiveEndPanel();
     }
 
 }

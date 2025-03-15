@@ -282,7 +282,8 @@ Transform:
   m_LocalPosition: {x: 0.07258148, y: 0.38460112, z: -0.00000007488459}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1058894169488931606}
   m_Father: {fileID: 4499595482890211519}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1900786746923789787
@@ -847,13 +848,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4682212239590369539}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 2.3883, y: 1, z: 5.955625}
+  m_LocalRotation: {x: 0.00000011598334, y: 0.000000033929492, z: 0.31245503, w: 0.9499325}
+  m_LocalPosition: {x: -0.89, y: -0.79, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1193516464796804276}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 1057948015995577631}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 36.414}
 --- !u!114 &1826579821339234762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -886,7 +887,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.12, y: 0.59, z: 1.01}
+  m_Size: {x: 2.82, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4706167100247824758
 GameObject:
@@ -1273,7 +1274,6 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1058894169488931606}
   - {fileID: 1092420466831877441}
   - {fileID: 8301632964322812399}
   - {fileID: 4543758586714955595}
@@ -1305,7 +1305,7 @@ Animator:
   m_GameObject: {fileID: 7727390254607296626}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 66ca9bf0145725543a1e8a693589f362, type: 3}
-  m_Controller: {fileID: 9100000, guid: 4264eec3292c7eb4fa48669e23da7c9e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5002024f4552d9d45ae0e15e8581c008, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -1400,12 +1400,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3679f758e8f2388459ead5d4e97cdf23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 5905369404161431996}
   attackCollision: {fileID: 4682212239590369539}
   particle: {fileID: 5112403345868107898, guid: 6f34ef0d986e9db4199cf75805f79753, type: 3}
+  deadParticle: {fileID: 8771972552311404799, guid: bbf9e36a48d6c5648a13889afab076fd, type: 3}
   particleLocation: {fileID: 6202566125973615450}
-  anim: {fileID: 3987771132369693527}
-  rigid: {fileID: 6921210367304236290}
+  wayPoints: {fileID: 0}
+  waitAtPoint: 2
+  currentState: 0
+  chaseRange: 3
+  suspiciousTime: 3
+  attackRange: 1
+  attackTime: 2
 --- !u!1 &7845478833186813760
 GameObject:
   m_ObjectHideFlags: 0

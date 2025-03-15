@@ -36,6 +36,7 @@ public class Enemy : MonoBehaviour, IDamageable
     public void Dead()
     {
         this.gameObject.SetActive(false);
+        GameManager.Instance.killCount++;
     }
 
     
