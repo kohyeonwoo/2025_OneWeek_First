@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 public class Sting : Player
 {
 
@@ -19,19 +19,19 @@ public class Sting : Player
 
     private float distance;
 
-    private bool bMove;
+    public TextMeshProUGUI stingHealth;
 
     private void Start()
     {
+
+        Init();
+
         maxHealth = 20.0f;
         currentHealth = maxHealth;
 
         range = 6.5f;
         speed = 3.0f;
 
-        //InvokeRepeating("UpdateTarget", 0.0f, 0.25f);
-
-        bMove = true;
     }
 
     private void Update()
@@ -45,25 +45,7 @@ public class Sting : Player
             return;
         }
 
-        //if(bMove)
-        //{
-
-        //    Vector3 direction = target.position - transform.position;
-
-        //    distance = Vector3.Distance(this.transform.position, target.position);
-
-        //    Quaternion lookRotation = Quaternion.LookRotation(direction);
-
-        //    Vector3 rotation = Quaternion.Lerp(this.transform.rotation, lookRotation, Time.deltaTime * 3).eulerAngles;
-        //    this.transform.rotation = Quaternion.Euler(0.0f, rotation.y, 0.0f);
-
-        //    float distanceThisFrame = speed * Time.deltaTime;
-
-        //    transform.Translate(direction.normalized * speed * Time.deltaTime, Space.World);
-
-        //    anim.SetBool("bMove", true);
-
-        //}
+        stingHealth.text = currentHealth.ToString();
 
         Vector3 direction = target.position - transform.position;
 
@@ -87,16 +69,6 @@ public class Sting : Player
     public void FindTarget(Transform Target)
     {
         target = Target;
-    }
-
-    public void SetBMoveTrue()
-    {
-        bMove = true;
-    }
-
-    public void SetBMoveFalse()
-    {
-        bMove = true;
     }
 
     private void UpdateTarget()

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.AI;
 using UnityEngine;
+using TMPro;
 
 public class Beetle : Player
 {
@@ -19,6 +20,8 @@ public class Beetle : Player
     private float speed;
 
     private float distance;
+
+    public TextMeshProUGUI beetleHealth;
 
     private void Start()
     {
@@ -38,6 +41,8 @@ public class Beetle : Player
             anim.SetBool("bAttack", false);
             return;
         }
+
+        beetleHealth.text = currentHealth.ToString();
 
         Vector3 direction = target.position - transform.position;
 

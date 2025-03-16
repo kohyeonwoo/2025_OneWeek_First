@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.AI;
 using UnityEngine;
+using TMPro;
 
 public class Rhino : Player
 {
@@ -20,6 +21,8 @@ public class Rhino : Player
 
     private float distance;
 
+    public TextMeshProUGUI rhinoHealth;
+
     private void Start()
     {
         Init();
@@ -30,6 +33,8 @@ public class Rhino : Player
 
     private void Update()
     {
+
+        rhinoHealth.text = currentHealth.ToString();
 
         UpdateTarget();
 

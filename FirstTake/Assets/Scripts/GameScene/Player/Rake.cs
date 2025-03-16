@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Rake : Player
 {
@@ -19,6 +20,8 @@ public class Rake : Player
 
     private float distance;
 
+    public TextMeshProUGUI rakeHealth;
+
 
     private void Start()
     {
@@ -30,6 +33,8 @@ public class Rake : Player
 
     private void Update()
     {
+
+        rakeHealth.text = currentHealth.ToString();
 
         UpdateTarget();
 

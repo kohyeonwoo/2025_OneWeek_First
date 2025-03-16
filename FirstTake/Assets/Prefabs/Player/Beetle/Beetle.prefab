@@ -887,7 +887,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.82, y: 1, z: 1}
+  m_Size: {x: 1.89, y: 1, z: 1.42}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4706167100247824758
 GameObject:
@@ -1404,13 +1404,11 @@ MonoBehaviour:
   particle: {fileID: 5112403345868107898, guid: 6f34ef0d986e9db4199cf75805f79753, type: 3}
   deadParticle: {fileID: 8771972552311404799, guid: bbf9e36a48d6c5648a13889afab076fd, type: 3}
   particleLocation: {fileID: 6202566125973615450}
-  wayPoints: {fileID: 0}
-  waitAtPoint: 2
-  currentState: 0
-  chaseRange: 3
-  suspiciousTime: 3
+  target: {fileID: 0}
+  range: 0
   attackRange: 1
-  attackTime: 2
+  speed: 0
+  beetleHealth: {fileID: 0}
 --- !u!1 &7845478833186813760
 GameObject:
   m_ObjectHideFlags: 0

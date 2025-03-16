@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,13 +12,25 @@ public class GameManager : MonoBehaviour
 
     public int killCount;
 
+    public int result_KillCount;
+
     private bool isPause;
 
     public Text killCountText;
 
+    public TextMeshProUGUI result_killCountText;
+    
+    public TextMeshProUGUI result_Stage;
+
     public GameObject pausePanel;
 
     public GameObject endGamePanel;
+
+    public List<GameObject> characters = new List<GameObject>();
+
+    public List<GameObject> charactersHealth = new List<GameObject>();
+
+    public List<GameObject> checkImages = new List<GameObject>();
 
     private void Awake()
     {
@@ -33,12 +46,19 @@ public class GameManager : MonoBehaviour
 
         killCount = 0;
 
+        result_KillCount = 0;
+
         isPause = false;
     }
 
     private void Update()
     {
         killCountText.text = killCount.ToString();
+
+        result_KillCount = killCount;
+
+        result_killCountText.text = result_KillCount.ToString();
+
     }
 
     public void StartMenuMusic()
@@ -63,22 +83,24 @@ public class GameManager : MonoBehaviour
 
     public void Pause()
     {
-        if (isPause == false)
-        {
-            Time.timeScale = 0;
-            isPause = true;
-            return;
-        }
+        //if (isPause == false)
+        //{
+        //    Time.timeScale = 0;
+        //    isPause = true;
+        //    return;
+        //}
+        Time.timeScale = 0;
     }
 
     public void UnPause()
     {
-        if (isPause == true)
-        {
-            Time.timeScale = 1;
-            isPause = false;
-            return;
-        }
+        //if (isPause == true)
+        //{
+        //    Time.timeScale = 1;
+        //    isPause = false;
+        //    return;
+        //}
+        Time.timeScale = 1;
     }
 
     public void SetActivePausePanel()
@@ -90,6 +112,176 @@ public class GameManager : MonoBehaviour
     {
         endGamePanel.SetActive(true);   
     }
+
+    public void CharacterActiveCase(int index)
+    {
+        switch(index)
+        {
+            case 0:
+                characters[0].SetActive(true);
+                charactersHealth[0].SetActive(true);
+                checkImages[0].SetActive(true);
+
+                characters[1].SetActive(false);
+                charactersHealth[1].SetActive(false);
+                checkImages[1].SetActive(false);
+
+                characters[2].SetActive(false);
+                charactersHealth[2].SetActive(false);
+                checkImages[2].SetActive(false);
+
+                characters[3].SetActive(false);
+                charactersHealth[3].SetActive(false);
+                checkImages[3].SetActive(false);
+
+                characters[4].SetActive(false);
+                charactersHealth[4].SetActive(false);
+                checkImages[4].SetActive(false);
+
+                characters[5].SetActive(false);
+                charactersHealth[5].SetActive(false);
+                checkImages[5].SetActive(false);
+
+                break;
+
+            case 1:
+                characters[0].SetActive(false);
+                charactersHealth[0].SetActive(false);
+                checkImages[0].SetActive(false);
+
+                characters[1].SetActive(true);
+                charactersHealth[1].SetActive(true);
+                checkImages[1].SetActive(true);
+
+                characters[2].SetActive(false);
+                charactersHealth[2].SetActive(false);
+                checkImages[2].SetActive(false);
+
+                characters[3].SetActive(false);
+                charactersHealth[3].SetActive(false);
+                checkImages[3].SetActive(false);
+
+                characters[4].SetActive(false);
+                charactersHealth[4].SetActive(false);
+                checkImages[4].SetActive(false);
+
+                characters[5].SetActive(false);
+                charactersHealth[5].SetActive(false);
+                checkImages[5].SetActive(false);
+
+                break;
+
+            case 2:
+                characters[0].SetActive(false);
+                charactersHealth[0].SetActive(false);
+                checkImages[0].SetActive(false);
+
+                characters[1].SetActive(false);
+                charactersHealth[1].SetActive(false);
+                checkImages[1].SetActive(false);
+
+                characters[2].SetActive(true);
+                charactersHealth[2].SetActive(true);
+                checkImages[2].SetActive(true);
+
+                characters[3].SetActive(false);
+                charactersHealth[3].SetActive(false);
+                checkImages[3].SetActive(false);
+
+                characters[4].SetActive(false);
+                charactersHealth[4].SetActive(false);
+                checkImages[4].SetActive(false);
+
+                characters[5].SetActive(false);
+                charactersHealth[5].SetActive(false);
+                checkImages[5].SetActive(false);
+
+                break;
+
+            case 3:
+                characters[0].SetActive(false);
+                charactersHealth[0].SetActive(false);
+                checkImages[0].SetActive(false);
+
+                characters[1].SetActive(false);
+                charactersHealth[1].SetActive(false);
+                checkImages[1].SetActive(false);
+
+                characters[2].SetActive(false);
+                charactersHealth[2].SetActive(false);
+                checkImages[2].SetActive(false);
+
+                characters[3].SetActive(true);
+                charactersHealth[3].SetActive(true);
+                checkImages[3].SetActive(true);
+
+                characters[4].SetActive(false);
+                charactersHealth[4].SetActive(false);
+                checkImages[4].SetActive(false);
+
+                characters[5].SetActive(false);
+                charactersHealth[5].SetActive(false);
+                checkImages[5].SetActive(false);
+
+                break;
+
+            case 4:
+                characters[0].SetActive(false);
+                charactersHealth[0].SetActive(false);
+                checkImages[0].SetActive(false);
+
+                characters[1].SetActive(false);
+                charactersHealth[1].SetActive(false);
+                checkImages[1].SetActive(false);
+
+                characters[2].SetActive(false);
+                charactersHealth[2].SetActive(false);
+                checkImages[2].SetActive(false);
+
+                characters[3].SetActive(false);
+                charactersHealth[3].SetActive(false);
+                checkImages[3].SetActive(false);
+
+                characters[4].SetActive(true);
+                charactersHealth[4].SetActive(true);
+                checkImages[4].SetActive(true);
+
+                characters[5].SetActive(false);
+                charactersHealth[5].SetActive(false);
+                checkImages[5].SetActive(false);
+
+                break;
+
+            case 5:
+                characters[0].SetActive(false);
+                charactersHealth[0].SetActive(false);
+                checkImages[0].SetActive(false);
+
+                characters[1].SetActive(false);
+                charactersHealth[1].SetActive(false);
+                checkImages[1].SetActive(false);
+
+                characters[2].SetActive(false);
+                charactersHealth[2].SetActive(false);
+                checkImages[2].SetActive(false);
+
+                characters[3].SetActive(false);
+                charactersHealth[3].SetActive(false);
+                checkImages[3].SetActive(false);
+
+                characters[4].SetActive(false);
+                charactersHealth[4].SetActive(false);
+                checkImages[4].SetActive(false);
+
+                characters[5].SetActive(true);
+                charactersHealth[5].SetActive(true);
+                checkImages[5].SetActive(true);
+
+                break;
+
+        }
+    }
+
 
 
     public void Quit()

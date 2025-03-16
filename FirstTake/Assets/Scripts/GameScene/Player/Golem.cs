@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 public class Golem : Player
 {
 
@@ -19,7 +19,7 @@ public class Golem : Player
 
     private float distance;
 
-    private bool bMove;
+    public TextMeshProUGUI golemHealth;
 
     private void Start()
     {
@@ -31,6 +31,8 @@ public class Golem : Player
 
     private void Update()
     {
+
+        golemHealth.text = currentHealth.ToString();
 
         UpdateTarget();
 

@@ -296,12 +296,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8564faee6fcef254daea8df89052045c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 8999660165384895933}
   attackCollision: {fileID: 8711505836774298558}
   particle: {fileID: 5112403345868107898, guid: 6f34ef0d986e9db4199cf75805f79753, type: 3}
+  deadParticle: {fileID: 0}
   particleLocation: {fileID: 7161195010589952502}
-  anim: {fileID: 1491942860456053048}
-  rigid: {fileID: 1213202146385122247}
+  target: {fileID: 0}
+  range: 0
+  attackRange: 0
+  speed: 0
+  whaleHealth: {fileID: 0}
 --- !u!1 &128709300086906181
 GameObject:
   m_ObjectHideFlags: 0
@@ -1886,7 +1889,7 @@ Transform:
   m_GameObject: {fileID: 8711505836774298558}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0, z: 0.171}
+  m_LocalPosition: {x: 0, y: -0, z: 0.72}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1911,7 +1914,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1.5, y: 1.5, z: 1.5}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8723446888608722648
 MonoBehaviour:
