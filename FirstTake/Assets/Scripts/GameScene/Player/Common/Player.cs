@@ -43,6 +43,8 @@ public class Player : MonoBehaviour, IDamageable
         GameObject obj = Instantiate(particle, particleLocation.position, Quaternion.identity);
         Destroy(obj, 2.0f);
 
+        GameManager.Instance.PlayHitEffect();
+
         if (currentHealth <= 0)
         {
             Dead();
@@ -51,10 +53,10 @@ public class Player : MonoBehaviour, IDamageable
 
     public void Dead()
     {
-        GameObject obj = Instantiate(deadParticle, particleLocation.position, Quaternion.identity);
-        Destroy(obj, 3.0f);
-        // this.gameObject.SetActive(false);
-        Destroy(this.gameObject);
+       // GameObject obj = Instantiate(deadParticle, particleLocation.position, Quaternion.identity);
+       // Destroy(obj, 3.0f);
+         this.gameObject.SetActive(false);
+        //Destroy(this.gameObject);
 
         GameManager.Instance.SetActiveEndPanel();
     }

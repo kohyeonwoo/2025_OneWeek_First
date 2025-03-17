@@ -50,10 +50,10 @@ public class Whale : Player
 
         distance = Vector3.Distance(this.transform.position, target.position);
 
-        Quaternion lookRotation = Quaternion.LookRotation(direction);
+        //Quaternion lookRotation = Quaternion.LookRotation(direction);
 
-        Vector3 rotation = Quaternion.Lerp(this.transform.rotation, lookRotation, Time.deltaTime * 3).eulerAngles;
-        this.transform.rotation = Quaternion.Euler(0.0f, rotation.y, 0.0f);
+        //Vector3 rotation = Quaternion.Lerp(this.transform.rotation, lookRotation, Time.deltaTime * 3).eulerAngles;
+        //this.transform.rotation = Quaternion.Euler(0.0f, rotation.y, 0.0f);
 
         float distanceThisFrame = speed * Time.deltaTime;
 

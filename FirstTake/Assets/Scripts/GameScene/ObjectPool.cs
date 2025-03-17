@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ObjectPool : MonoBehaviour
 {
+
     public List<GameObject> spawnList = new List<GameObject>(); //스폰 유닛 모음
     public List<GameObject> poolObject = new List<GameObject>(); // 풀 오브젝트 부분 
     public List<Transform> locationList = new List<Transform>(); // 스폰 위치 모음 
@@ -25,12 +26,15 @@ public class ObjectPool : MonoBehaviour
 
     private void Update()
     {
-        if(countdown <= 0.0f)
+        if(GameManager.Instance.bSpawn == true)
         {
-            StartCoroutine(SpawnCoroutine());
-            countdown = breakTime;
-        }
-        countdown -= Time.deltaTime;
+            if (countdown <= 0.0f)
+            {
+                StartCoroutine(SpawnCoroutine());
+                countdown = breakTime;
+            }
+            countdown -= Time.deltaTime;
+        }     
     }
 
     IEnumerator SpawnCoroutine()

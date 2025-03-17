@@ -14,7 +14,14 @@ public class GameManager : MonoBehaviour
 
     public int result_KillCount;
 
+    int rand;
+
+    [SerializeField]
+    private float hitDuration = 0.1f;
+
     private bool isPause;
+
+    public bool bSpawn;
 
     public Text killCountText;
 
@@ -26,18 +33,22 @@ public class GameManager : MonoBehaviour
 
     public GameObject endGamePanel;
 
+    public GameObject hitEffect;
+
     public List<GameObject> characters = new List<GameObject>();
 
     public List<GameObject> charactersHealth = new List<GameObject>();
 
     public List<GameObject> checkImages = new List<GameObject>();
 
+    public List<GameObject> lockImages = new List<GameObject>();
+
     private void Awake()
     {
         if(Instance == null)
         {
             Instance = this;
-        }
+        }        
     }
 
     void Start()
@@ -49,16 +60,39 @@ public class GameManager : MonoBehaviour
         result_KillCount = 0;
 
         isPause = false;
+
+        bSpawn = false;
+
+        DataManager.Instance.LoadGameData();
     }
 
     private void Update()
     {
+
+        DataManager.Instance.LoadGameData();
+
+        rand = Random.Range(0, 4);
+
+        lockImages[rand].SetActive(DataManager.Instance.gameData.lockImageOff[rand]);
+
         killCountText.text = killCount.ToString();
 
         result_KillCount = killCount;
 
         result_killCountText.text = result_KillCount.ToString();
 
+        DataManager.Instance.SaveGameData();
+ 
+    }
+
+    public void OffImage()
+    {
+        
+        DataManager.Instance.gameData.lockImageOff[rand] = false;
+
+        lockImages[rand].SetActive(DataManager.Instance.gameData.lockImageOff[rand]);
+
+        DataManager.Instance.SaveGameData();
     }
 
     public void StartMenuMusic()
@@ -101,6 +135,34 @@ public class GameManager : MonoBehaviour
         //    return;
         //}
         Time.timeScale = 1;
+    }
+
+    public void PlayHitEffect()
+    {
+        StartCoroutine(ActiveHitEffect());
+    }
+
+    private IEnumerator ActiveHitEffect()
+    {
+
+        hitEffect.SetActive(true);
+
+        float elapsed = 0.0f;
+
+        while(elapsed < hitDuration)
+        {
+            elapsed += Time.deltaTime;
+
+            yield return null;
+        }
+
+        hitEffect.SetActive(false);
+
+    }
+
+    public void StartSpawnEnemy()
+    {
+        bSpawn = true;
     }
 
     public void SetActivePausePanel()
