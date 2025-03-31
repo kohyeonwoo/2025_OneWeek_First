@@ -968,7 +968,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 7f1057a1ab7dd694c918f1e83b470560, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -1060,17 +1060,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad19e9e9a556b354a8d51b2c62f04ae9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 4100149399108029169}
-  attackCollision: {fileID: 7802225584537376646}
-  particle: {fileID: 5112403345868107898, guid: 6f34ef0d986e9db4199cf75805f79753, type: 3}
-  deadParticle: {fileID: 0}
-  particleLocation: {fileID: 2791506245378030860}
-  anim: {fileID: 4439527684712455637}
-  rigid: {fileID: 6682423501041756519}
   target: {fileID: 0}
-  range: 0
-  attackRange: 0
-  speed: 0
+  nav: {fileID: 0}
+  anim: {fileID: 0}
+  rigid: {fileID: 0}
+  meshes: []
+  attackCollision: {fileID: 7802225584537376646}
+  attackCollision2: {fileID: 2830656744557907408}
+  attackCollision3: {fileID: 0}
+  bChase: 0
+  bAttack: 0
+  stingHealth: {fileID: 0}
 --- !u!1 &4473972139538968412
 GameObject:
   m_ObjectHideFlags: 0
@@ -1738,7 +1738,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5874005073471418674
 Transform:
   m_ObjectHideFlags: 0

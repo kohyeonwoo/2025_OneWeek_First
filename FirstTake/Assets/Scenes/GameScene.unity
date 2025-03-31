@@ -10981,28 +10981,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 2133696472}
     m_Modifications:
     - target: {fileID: 3709776341981559057, guid: 8ee290f69d916de4cb9c25bf4c5baab3, type: 3}
-      propertyPath: range
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3709776341981559057, guid: 8ee290f69d916de4cb9c25bf4c5baab3, type: 3}
-      propertyPath: speed
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3709776341981559057, guid: 8ee290f69d916de4cb9c25bf4c5baab3, type: 3}
-      propertyPath: attackRange
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3709776341981559057, guid: 8ee290f69d916de4cb9c25bf4c5baab3, type: 3}
       propertyPath: stingHealth
       value: 
       objectReference: {fileID: 1810982802}
     - target: {fileID: 4147910578946556094, guid: 8ee290f69d916de4cb9c25bf4c5baab3, type: 3}
       propertyPath: m_Name
       value: Sting
-      objectReference: {fileID: 0}
-    - target: {fileID: 4147910578946556094, guid: 8ee290f69d916de4cb9c25bf4c5baab3, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7160799817235608903, guid: 8ee290f69d916de4cb9c25bf4c5baab3, type: 3}
       propertyPath: m_LocalPosition.x
