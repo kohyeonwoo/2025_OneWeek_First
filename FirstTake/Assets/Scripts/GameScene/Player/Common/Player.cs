@@ -57,14 +57,20 @@ public class Player : MonoBehaviour, IDamageable
 
     private void OnEnable()
     {
-        
+        ChangeState(CurrentState.Idle);   
     }
 
     private void OnDisable()
     {
-
+        StopCoroutine(currentState.ToString());
+        currentState = CurrentState.None;
     }
 
+
+    private void Awake()
+    {
+        Init();
+    }
 
     //컴포넌트 / 기타 설정 관련 초기화 부분 
     public void Init()
@@ -149,7 +155,7 @@ public class Player : MonoBehaviour, IDamageable
         while(true)
         {
             //대기 상황인 경우, 타겟과의 거리에 따라 행동 선택(배회, 추격, 공격)
-           
+            CalculateDistanceToTargetAndSelectState();
 
             yield return null;
         }
@@ -190,10 +196,121 @@ public class Player : MonoBehaviour, IDamageable
             }
 
             //타겟과의 거리에 따라 행동을 선택한다(배회, 추격, 공격 )
+            CalculateDistanceToTargetAndSelectState();
 
             yield return null;
 
         }
+    }
+
+    //추격 부분 
+    private IEnumerator Pursuit()
+    {
+        while (true)
+        {
+            //이동 속도 설정(배회할 때는 걷는 속도로 이동, 추적할 때는 뛰는 속도로 이동)
+            nav.speed = runSpeed;
+
+            //목표 위치를 현재 플레이어의 위치로 설정
+            nav.SetDestination(target.position);
+
+            //타겟 방향을 계속 주시하도록 함
+            LookRotationToTarget();
+
+            anim.SetBool("isAttack", false);
+            anim.SetBool("isMove", true);
+
+            //타겟과의 거리에 따라 행동 선택(배회, 추격, 원거리 혹은 근거리 공격)
+            CalculateDistanceToTargetAndSelectState();
+
+            yield return null;
+        }
+    }
+
+    //공격
+    private IEnumerator Attack()
+    {
+        //공격 시 이동을 멈추도록 설정
+        nav.ResetPath();
+
+        while (true)
+        {
+            //타겟 방향 주시
+            LookRotationToTarget();
+
+            //타겟과의 거리에 따라 행동 선택(배회, 추격, 원거리 혹은 근거리 공격)
+            CalculateDistanceToTargetAndSelectState();
+
+            if (Time.time - lastAttackTime > attackRange)
+            {
+                //공격 주기가 되어야 공격할 수 있도록 하기 위해 현재 시간 저장
+                lastAttackTime = Time.time;
+                anim.SetBool("isAttack", true);
+                anim.SetBool("isMove", false);
+                //발사체 생성
+                // GameObject clone = Instantiate(projectilePrefab, projectileSpawnPoint.position, projectileSpawnPoint.rotation);
+                // clone.GetComponent<EnemyProjectile>().SetUp(target.position);
+            }
+            yield return null;
+        }
+    }
+
+    //목표를 바라보게 하는 부분 
+    private void LookRotationToTarget()
+    {
+        //목표 위치
+        Vector3 to = new Vector3(target.position.x, 0, target.position.z);
+        //내 위치
+        Vector3 from = new Vector3(transform.position.x, 0, transform.position.z);
+
+        //바로 돌기
+        transform.rotation = Quaternion.LookRotation(to - from);
+        //서서히 돌기
+        // Quaternion rotation = Quaternion.LookRotation(to - from);
+        //transform.rotation = Quaternion.Slerp(transform.rotation, RotationDriveMode, 0.01f);
+    }
+
+    //타겟과의 거리 계산해 행동 바꿔주는 부분 
+    private void CalculateDistanceToTargetAndSelectState()
+    {
+        if (target == null) { return; }
+
+        //플레이어(Target)와 적의 거리 계산 후 거리에 따라 행동 선택
+        float distance = Vector3.Distance(target.position, transform.position);
+
+        if (distance <= attackRange)
+        {
+            ChangeState(CurrentState.Attack);
+        }
+        else if (distance <= targetRange)
+        {
+            ChangeState(CurrentState.Pursuit);
+        }
+        else if (distance >= chaseLimitRange)
+        {
+            ChangeState(CurrentState.Wander);
+        }
+    }
+
+    //움직임 관련 범위를 그려주는 기즈모 
+
+    private void OnDrawGizmos()
+    {
+        //"배회" 상태일 때 이동할 경로 표시
+        Gizmos.color = Color.black;
+        Gizmos.DrawRay(transform.position, nav.destination - transform.position);
+
+        //목표 인식 범위
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, targetRange);
+
+        //추적 범위
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, chaseLimitRange);
+
+        //공격 범위
+        Gizmos.color = new Color(0.39f, 0.04f, 0.04f);
+        Gizmos.DrawWireSphere(transform.position, attackRange);
     }
 
 

@@ -11,7 +11,7 @@ public class Sting : Player
     {
         maxHealth = 20.0f;
         currentHealth = maxHealth;
-        Init();
+       // Init();
     }
 
     private void Update()
