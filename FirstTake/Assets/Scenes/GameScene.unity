@@ -6337,7 +6337,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1328820549
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10988,6 +10988,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sting
       objectReference: {fileID: 0}
+    - target: {fileID: 4147910578946556094, guid: 8ee290f69d916de4cb9c25bf4c5baab3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7160799817235608903, guid: 8ee290f69d916de4cb9c25bf4c5baab3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -11139,7 +11143,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 604637820981358728, guid: 009418bc6e9f1154f9f29dedaeb2537b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5804701925708402791, guid: 009418bc6e9f1154f9f29dedaeb2537b, type: 3}
       propertyPath: m_Controller
@@ -11159,7 +11163,7 @@ PrefabInstance:
       objectReference: {fileID: 12648433}
     - target: {fileID: 7225465430947336376, guid: 009418bc6e9f1154f9f29dedaeb2537b, type: 3}
       propertyPath: attackRange
-      value: 3
+      value: 0.54
       objectReference: {fileID: 0}
     - target: {fileID: 7225465430947336376, guid: 009418bc6e9f1154f9f29dedaeb2537b, type: 3}
       propertyPath: deadParticle

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.AI;
 using UnityEngine;
 using TMPro;
 public class Sting : Player
@@ -11,7 +12,7 @@ public class Sting : Player
     {
         maxHealth = 20.0f;
         currentHealth = maxHealth;
-       // Init();
+        Init();
     }
 
     private void Update()

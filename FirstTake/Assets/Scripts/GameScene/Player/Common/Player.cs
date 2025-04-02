@@ -9,7 +9,7 @@ public enum CurrentState
     Idle = 0,
     Wander,
     Pursuit,
-    Attack
+    Attack 
 }
 
 public class Player : MonoBehaviour, IDamageable
@@ -217,8 +217,8 @@ public class Player : MonoBehaviour, IDamageable
             //타겟 방향을 계속 주시하도록 함
             LookRotationToTarget();
 
-            anim.SetBool("isAttack", false);
-            anim.SetBool("isMove", true);
+            anim.SetBool("bAttack", false);
+            anim.SetBool("bMove", true);
 
             //타겟과의 거리에 따라 행동 선택(배회, 추격, 원거리 혹은 근거리 공격)
             CalculateDistanceToTargetAndSelectState();
@@ -245,8 +245,8 @@ public class Player : MonoBehaviour, IDamageable
             {
                 //공격 주기가 되어야 공격할 수 있도록 하기 위해 현재 시간 저장
                 lastAttackTime = Time.time;
-                anim.SetBool("isAttack", true);
-                anim.SetBool("isMove", false);
+                anim.SetBool("bAttack", true);
+                anim.SetBool("bMove", false);
                 //발사체 생성
                 // GameObject clone = Instantiate(projectilePrefab, projectileSpawnPoint.position, projectileSpawnPoint.rotation);
                 // clone.GetComponent<EnemyProjectile>().SetUp(target.position);
