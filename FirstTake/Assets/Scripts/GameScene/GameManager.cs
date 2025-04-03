@@ -23,8 +23,6 @@ public class GameManager : MonoBehaviour
 
     public bool bSpawn;
 
-    public bool bMove;
-
     public Text killCountText;
 
     public TextMeshProUGUI result_killCountText;
@@ -77,8 +75,6 @@ public class GameManager : MonoBehaviour
 
         rand = Random.Range(0, 4);
 
-        lockImages[rand].SetActive(DataManager.Instance.gameData.lockImageOff[rand]);
-
         killCountText.text = killCount.ToString();
 
         result_KillCount = killCount;
@@ -86,22 +82,7 @@ public class GameManager : MonoBehaviour
         result_killCountText.text = result_KillCount.ToString();
 
         DataManager.Instance.SaveGameData();
- 
-        if(bMove)
-        {
-
-        }
-
-    }
-
-    public void OffImage()
-    {
-        
-        DataManager.Instance.gameData.lockImageOff[rand] = false;
-
-        lockImages[rand].SetActive(DataManager.Instance.gameData.lockImageOff[rand]);
-
-        DataManager.Instance.SaveGameData();
+     
     }
 
     public void StartMenuMusic()

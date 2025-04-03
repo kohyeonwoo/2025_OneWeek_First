@@ -833,7 +833,7 @@ GameObject:
   - component: {fileID: 1058894169488931606}
   - component: {fileID: 1826579821339234762}
   - component: {fileID: 3308149168768813058}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AttackCollision
   m_TagString: PlayerAttackCollision
   m_Icon: {fileID: 0}
@@ -849,7 +849,7 @@ Transform:
   m_GameObject: {fileID: 4682212239590369539}
   serializedVersion: 2
   m_LocalRotation: {x: 0.00000011598334, y: 0.000000033929492, z: 0.31245503, w: 0.9499325}
-  m_LocalPosition: {x: -0.89, y: -0.79, z: -0}
+  m_LocalPosition: {x: -0.984, y: -0.591, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -887,7 +887,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.89, y: 1, z: 1.42}
+  m_Size: {x: 1.07, y: 0.29, z: 0.37}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4706167100247824758
 GameObject:
@@ -1251,9 +1251,9 @@ GameObject:
   - component: {fileID: 1193516464796804276}
   - component: {fileID: 3987771132369693527}
   - component: {fileID: 5324066253967094704}
-  - component: {fileID: 6921210367304236290}
   - component: {fileID: 5905369404161431996}
   - component: {fileID: 1855873703494117757}
+  - component: {fileID: 2280028875833446073}
   m_Layer: 0
   m_Name: Beetle
   m_TagString: Player
@@ -1339,33 +1339,6 @@ CapsuleCollider:
   m_Height: 2.73
   m_Direction: 2
   m_Center: {x: 0, y: 0.86, z: 0}
---- !u!54 &6921210367304236290
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7727390254607296626}
-  serializedVersion: 4
-  m_Mass: 999
-  m_Drag: 1
-  m_AngularDrag: 999
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 80
-  m_CollisionDetection: 0
 --- !u!195 &5905369404161431996
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1376,11 +1349,11 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
+  m_Speed: 10
+  m_Acceleration: 50
   avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_AngularSpeed: 360
+  m_StoppingDistance: 1
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -1400,15 +1373,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3679f758e8f2388459ead5d4e97cdf23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCollision: {fileID: 4682212239590369539}
-  particle: {fileID: 5112403345868107898, guid: 6f34ef0d986e9db4199cf75805f79753, type: 3}
-  deadParticle: {fileID: 8771972552311404799, guid: bbf9e36a48d6c5648a13889afab076fd, type: 3}
-  particleLocation: {fileID: 6202566125973615450}
-  target: {fileID: 0}
-  range: 0
-  attackRange: 1
-  speed: 0
-  beetleHealth: {fileID: 0}
+  unitState: 0
+  targetTag: Enemy
+  targetRGRange: 5
+  psLimitRange: 7
+  atRange: 3
+  attackSpeed: 1
+  lastAttackTime: 2
+  walkSpeed: 2
+  runSpeed: 5
+  _target: {fileID: 0}
+--- !u!54 &2280028875833446073
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7727390254607296626}
+  serializedVersion: 4
+  m_Mass: 5000
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 1
 --- !u!1 &7845478833186813760
 GameObject:
   m_ObjectHideFlags: 0

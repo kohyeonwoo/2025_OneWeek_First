@@ -17,6 +17,8 @@ public class Rake : MonoBehaviour
     public Rigidbody rigid;
     public SkinnedMeshRenderer[] meshes;
 
+    public bool bAttack;
+
     public int maxHealth;
     private int currentHealth;
 
@@ -46,6 +48,7 @@ public class Rake : MonoBehaviour
         rigid = GetComponent<Rigidbody>();
         meshes = GetComponentsInChildren<SkinnedMeshRenderer>();
         nav.updateRotation = false;
+        bAttack = false;
     }
 
     private void Start()
@@ -103,7 +106,7 @@ public class Rake : MonoBehaviour
                 nav.isStopped = false;
                 nav.SetDestination(target.position);
                 anim.SetBool("bMove", true);
-                }
+               }
 
 
 
