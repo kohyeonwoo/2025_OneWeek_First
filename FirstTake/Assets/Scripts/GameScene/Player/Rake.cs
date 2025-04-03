@@ -7,6 +7,9 @@ using TMPro;
 public class Rake : MonoBehaviour
 {
 
+    public GameObject attackCollision1;
+    public GameObject attackCollision2;
+
     public Transform target;
 
     public NavMeshAgent nav;
@@ -16,6 +19,8 @@ public class Rake : MonoBehaviour
 
     public int maxHealth;
     private int currentHealth;
+
+    public float distanceToEnemy;
 
     [SerializeField]
     private float range = 7.5f;
@@ -40,13 +45,13 @@ public class Rake : MonoBehaviour
         anim = GetComponent<Animator>();
         rigid = GetComponent<Rigidbody>();
         meshes = GetComponentsInChildren<SkinnedMeshRenderer>();
+        nav.updateRotation = false;
     }
 
     private void Start()
     {
         maxHealth = 25;
         currentHealth = maxHealth;
-
     }
 
     private void Update()
@@ -60,28 +65,46 @@ public class Rake : MonoBehaviour
         }
         else
         {
+            anim.SetBool("bMove", false);
+           
+           
+             distanceToEnemy = Vector3.Distance(transform.position,
+             target.transform.position);
 
-            float distanceToEnemy = Vector3.Distance(transform.position,
-                target.transform.position);
+                if (distanceToEnemy < attackRange)
+                { //목표 위치
+                    Vector3 to = new Vector3(target.position.x, 0, target.position.z);
+                    //내 위치
+                    Vector3 from = new Vector3(transform.position.x, 0, transform.position.z);
 
-            if (distanceToEnemy < attackRange)
-            { //목표 위치
-                Vector3 to = new Vector3(target.position.x, 0, target.position.z);
-                //내 위치
-                Vector3 from = new Vector3(transform.position.x, 0, transform.position.z);
+                    //곧바로 목표를 향해 돌기
+                    transform.rotation = Quaternion.LookRotation(to - from);
 
-                //바로 돌기
-                transform.rotation = Quaternion.LookRotation(to - from);
-                nav.isStopped = true;
-                Debug.Log("적이 공격 범위 내에 왔습니다");
-                anim.SetTrigger("Attack1");
-            }
-            else
-            {
-               // anim.SetBool("bAttack", false);
+                    ////천천히 목표를 향해 돌기
+                    //Quaternion rotation = Quaternion.LookRotation(to - from);
+                    //transform.rotation = Quaternion.Slerp(transform.rotation, RotationDriveMode, 0.01f);
+
+                    nav.isStopped = true;
+                    Debug.Log("적이 공격 범위 내에 왔습니다");
+
+                    if (attackCoolDown <= 0.0f)
+                    {
+                        anim.SetTrigger("Attack1");
+                        attackCoolDown = 1.0f / attackRate;
+                    }
+
+                    attackCoolDown -= Time.deltaTime;
+
+
+                }
+               else
+               {
+                anim.SetBool("bAttack", false);
                 nav.isStopped = false;
                 nav.SetDestination(target.position);
-            }
+                anim.SetBool("bMove", true);
+                }
+
 
 
         }
@@ -120,6 +143,18 @@ public class Rake : MonoBehaviour
             target = null;
         }
 
+    }
+
+    public void ActiveAttackCollision()
+    {
+        attackCollision1.SetActive(true);
+        attackCollision2.SetActive(true);
+    }
+
+    public void DeActiveAttackCollision()
+    {
+        attackCollision1.SetActive(false);
+        attackCollision2.SetActive(false);
     }
 
     private void OnDrawGizmos()

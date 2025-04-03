@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
 
     public bool bSpawn;
 
+    public bool bMove;
+
     public Text killCountText;
 
     public TextMeshProUGUI result_killCountText;
@@ -34,6 +36,8 @@ public class GameManager : MonoBehaviour
     public GameObject endGamePanel;
 
     public GameObject hitEffect;
+
+    public Camera mainCamera;
 
     public List<GameObject> characters = new List<GameObject>();
 
@@ -83,6 +87,11 @@ public class GameManager : MonoBehaviour
 
         DataManager.Instance.SaveGameData();
  
+        if(bMove)
+        {
+
+        }
+
     }
 
     public void OffImage()

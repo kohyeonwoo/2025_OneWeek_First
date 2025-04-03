@@ -267,7 +267,7 @@ public class Player : MonoBehaviour, IDamageable
         transform.rotation = Quaternion.LookRotation(to - from);
         //서서히 돌기
         // Quaternion rotation = Quaternion.LookRotation(to - from);
-        //transform.rotation = Quaternion.Slerp(transform.rotation, RotationDriveMode, 0.01f);
+        //transform.rotation = Quaternion.Slerp(transform.rotation, RotationDriveMode, 0.01f); 
     }
 
     //타겟과의 거리 계산해 행동 바꿔주는 부분 
