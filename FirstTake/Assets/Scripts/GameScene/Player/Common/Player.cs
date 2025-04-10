@@ -357,8 +357,6 @@ public class Player : MonoBehaviour, IDamageable
 
         AudioManager.Instance.PlaySFX("PlayerHitSound");
      
-        GameManager.Instance.PlayHitEffect();
-
         if (currentHealth <= 0)
         {
             Dead();

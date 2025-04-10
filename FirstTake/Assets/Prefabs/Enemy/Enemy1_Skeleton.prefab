@@ -97,7 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
   meshes: []
-  movementSpeed: 2
+  movementSpeed: 1
   target: {fileID: 0}
   health: 5
   wavePointIndex: 0

@@ -19,22 +19,25 @@ public class ObjectPool : MonoBehaviour
 
     public int limit; //풀에서 생성될 제한 수 
 
+    public int spawnIndex;
+
     private void Start()
     {
         CreatePool();
+
+        spawnIndex = 0;
     }
 
     private void Update()
     {
-        if(GameManager.Instance.bSpawn == true)
-        {
-            if (countdown <= 0.0f)
-            {
-                StartCoroutine(SpawnCoroutine());
-                countdown = breakTime;
-            }
-            countdown -= Time.deltaTime;
-        }     
+       
+       if (countdown <= 0.0f)
+       {
+           StartCoroutine(SpawnCoroutine());
+           countdown = breakTime;
+       }
+       countdown -= Time.deltaTime;
+       
     }
 
     IEnumerator SpawnCoroutine()
@@ -53,11 +56,9 @@ public class ObjectPool : MonoBehaviour
     {
         GameObject objects = GetPoolObject();
 
-        int rand = Random.Range(0, locationList.Count);
-
         if(objects != null)
         {
-            objects.transform.position = locationList[rand].position;
+            objects.transform.position = locationList[0].position;
             objects.SetActive(true);
         }
 
@@ -71,7 +72,7 @@ public class ObjectPool : MonoBehaviour
 
         for(int i =0; i < limit; i++)
         {
-            GameObject obj = Instantiate(spawnList[rand]);
+            GameObject obj = Instantiate(spawnList[spawnIndex]);
             obj.SetActive(false);
             poolObject.Add(obj);
         }

@@ -388,6 +388,7 @@
 "Assets/Scripts/GameScene/Player/Common/PlayerAttackCollision.cs"
 "Assets/Scripts/GameScene/Player/Golem.cs"
 "Assets/Scripts/GameScene/Player/PlayerPartyMonster.cs"
+"Assets/Scripts/GameScene/Player/PlayerUnit.cs"
 "Assets/Scripts/GameScene/Player/Rake.cs"
 "Assets/Scripts/GameScene/Player/Rhino.cs"
 "Assets/Scripts/GameScene/Player/Sting.cs"

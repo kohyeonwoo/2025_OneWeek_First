@@ -14,20 +14,10 @@ public class GameManager : MonoBehaviour
 
     public int result_KillCount;
 
-    int rand;
-
     [SerializeField]
     private float hitDuration = 0.1f;
 
     private bool isPause;
-
-    public bool bSpawn;
-
-    public Text killCountText;
-
-    public TextMeshProUGUI result_killCountText;
-    
-    public TextMeshProUGUI result_Stage;
 
     public GameObject pausePanel;
 
@@ -38,12 +28,6 @@ public class GameManager : MonoBehaviour
     public Camera mainCamera;
 
     public List<GameObject> characters = new List<GameObject>();
-
-    public List<GameObject> charactersHealth = new List<GameObject>();
-
-    public List<GameObject> checkImages = new List<GameObject>();
-
-    public List<GameObject> lockImages = new List<GameObject>();
 
     private void Awake()
     {
@@ -57,13 +41,7 @@ public class GameManager : MonoBehaviour
     {
         StartMenuMusic();
 
-        killCount = 0;
-
-        result_KillCount = 0;
-
         isPause = false;
-
-        bSpawn = false;
 
         DataManager.Instance.LoadGameData();
     }
@@ -72,17 +50,8 @@ public class GameManager : MonoBehaviour
     {
 
         DataManager.Instance.LoadGameData();
-
-        rand = Random.Range(0, 4);
-
-        killCountText.text = killCount.ToString();
-
-        result_KillCount = killCount;
-
-        result_killCountText.text = result_KillCount.ToString();
-
-        DataManager.Instance.SaveGameData();
      
+        DataManager.Instance.SaveGameData();
     }
 
     public void StartMenuMusic()
@@ -127,34 +96,6 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    public void PlayHitEffect()
-    {
-        StartCoroutine(ActiveHitEffect());
-    }
-
-    private IEnumerator ActiveHitEffect()
-    {
-
-        hitEffect.SetActive(true);
-
-        float elapsed = 0.0f;
-
-        while(elapsed < hitDuration)
-        {
-            elapsed += Time.deltaTime;
-
-            yield return null;
-        }
-
-        hitEffect.SetActive(false);
-
-    }
-
-    public void StartSpawnEnemy()
-    {
-        bSpawn = true;
-    }
-
     public void SetActivePausePanel()
     {
         pausePanel.SetActive(true);
@@ -164,177 +105,6 @@ public class GameManager : MonoBehaviour
     {
         endGamePanel.SetActive(true);   
     }
-
-    public void CharacterActiveCase(int index)
-    {
-        switch(index)
-        {
-            case 0:
-                characters[0].SetActive(true);
-                charactersHealth[0].SetActive(true);
-                checkImages[0].SetActive(true);
-
-                characters[1].SetActive(false);
-                charactersHealth[1].SetActive(false);
-                checkImages[1].SetActive(false);
-
-                characters[2].SetActive(false);
-                charactersHealth[2].SetActive(false);
-                checkImages[2].SetActive(false);
-
-                characters[3].SetActive(false);
-                charactersHealth[3].SetActive(false);
-                checkImages[3].SetActive(false);
-
-                characters[4].SetActive(false);
-                charactersHealth[4].SetActive(false);
-                checkImages[4].SetActive(false);
-
-                characters[5].SetActive(false);
-                charactersHealth[5].SetActive(false);
-                checkImages[5].SetActive(false);
-
-                break;
-
-            case 1:
-                characters[0].SetActive(false);
-                charactersHealth[0].SetActive(false);
-                checkImages[0].SetActive(false);
-
-                characters[1].SetActive(true);
-                charactersHealth[1].SetActive(true);
-                checkImages[1].SetActive(true);
-
-                characters[2].SetActive(false);
-                charactersHealth[2].SetActive(false);
-                checkImages[2].SetActive(false);
-
-                characters[3].SetActive(false);
-                charactersHealth[3].SetActive(false);
-                checkImages[3].SetActive(false);
-
-                characters[4].SetActive(false);
-                charactersHealth[4].SetActive(false);
-                checkImages[4].SetActive(false);
-
-                characters[5].SetActive(false);
-                charactersHealth[5].SetActive(false);
-                checkImages[5].SetActive(false);
-
-                break;
-
-            case 2:
-                characters[0].SetActive(false);
-                charactersHealth[0].SetActive(false);
-                checkImages[0].SetActive(false);
-
-                characters[1].SetActive(false);
-                charactersHealth[1].SetActive(false);
-                checkImages[1].SetActive(false);
-
-                characters[2].SetActive(true);
-                charactersHealth[2].SetActive(true);
-                checkImages[2].SetActive(true);
-
-                characters[3].SetActive(false);
-                charactersHealth[3].SetActive(false);
-                checkImages[3].SetActive(false);
-
-                characters[4].SetActive(false);
-                charactersHealth[4].SetActive(false);
-                checkImages[4].SetActive(false);
-
-                characters[5].SetActive(false);
-                charactersHealth[5].SetActive(false);
-                checkImages[5].SetActive(false);
-
-                break;
-
-            case 3:
-                characters[0].SetActive(false);
-                charactersHealth[0].SetActive(false);
-                checkImages[0].SetActive(false);
-
-                characters[1].SetActive(false);
-                charactersHealth[1].SetActive(false);
-                checkImages[1].SetActive(false);
-
-                characters[2].SetActive(false);
-                charactersHealth[2].SetActive(false);
-                checkImages[2].SetActive(false);
-
-                characters[3].SetActive(true);
-                charactersHealth[3].SetActive(true);
-                checkImages[3].SetActive(true);
-
-                characters[4].SetActive(false);
-                charactersHealth[4].SetActive(false);
-                checkImages[4].SetActive(false);
-
-                characters[5].SetActive(false);
-                charactersHealth[5].SetActive(false);
-                checkImages[5].SetActive(false);
-
-                break;
-
-            case 4:
-                characters[0].SetActive(false);
-                charactersHealth[0].SetActive(false);
-                checkImages[0].SetActive(false);
-
-                characters[1].SetActive(false);
-                charactersHealth[1].SetActive(false);
-                checkImages[1].SetActive(false);
-
-                characters[2].SetActive(false);
-                charactersHealth[2].SetActive(false);
-                checkImages[2].SetActive(false);
-
-                characters[3].SetActive(false);
-                charactersHealth[3].SetActive(false);
-                checkImages[3].SetActive(false);
-
-                characters[4].SetActive(true);
-                charactersHealth[4].SetActive(true);
-                checkImages[4].SetActive(true);
-
-                characters[5].SetActive(false);
-                charactersHealth[5].SetActive(false);
-                checkImages[5].SetActive(false);
-
-                break;
-
-            case 5:
-                characters[0].SetActive(false);
-                charactersHealth[0].SetActive(false);
-                checkImages[0].SetActive(false);
-
-                characters[1].SetActive(false);
-                charactersHealth[1].SetActive(false);
-                checkImages[1].SetActive(false);
-
-                characters[2].SetActive(false);
-                charactersHealth[2].SetActive(false);
-                checkImages[2].SetActive(false);
-
-                characters[3].SetActive(false);
-                charactersHealth[3].SetActive(false);
-                checkImages[3].SetActive(false);
-
-                characters[4].SetActive(false);
-                charactersHealth[4].SetActive(false);
-                checkImages[4].SetActive(false);
-
-                characters[5].SetActive(true);
-                charactersHealth[5].SetActive(true);
-                checkImages[5].SetActive(true);
-
-                break;
-
-        }
-    }
-
-
 
     public void Quit()
     {
