@@ -43,15 +43,6 @@ public class GameManager : MonoBehaviour
 
         isPause = false;
 
-        DataManager.Instance.LoadGameData();
-    }
-
-    private void Update()
-    {
-
-        DataManager.Instance.LoadGameData();
-     
-        DataManager.Instance.SaveGameData();
     }
 
     public void StartMenuMusic()

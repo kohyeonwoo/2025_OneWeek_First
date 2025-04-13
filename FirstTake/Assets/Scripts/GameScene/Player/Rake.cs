@@ -39,8 +39,6 @@ public class Rake : MonoBehaviour
     [SerializeField]
     private float attackCoolDown = 0.0f;
 
-    public TextMeshProUGUI rakeHealth;
-
     private void Awake()
     {
         nav = GetComponent<NavMeshAgent>();
@@ -111,9 +109,6 @@ public class Rake : MonoBehaviour
 
 
         }
-
-        rakeHealth.text = currentHealth.ToString();
-
     }
 
     private void UpdateTarget()

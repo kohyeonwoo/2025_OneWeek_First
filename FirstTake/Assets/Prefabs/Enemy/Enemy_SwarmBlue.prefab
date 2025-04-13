@@ -108,6 +108,7 @@ GameObject:
   - component: {fileID: 7271838988985531526}
   - component: {fileID: 112962747739391317}
   - component: {fileID: 8186344165085240156}
+  - component: {fileID: 7545321160005488309}
   m_Layer: 7
   m_Name: Enemy_SwarmBlue
   m_TagString: Enemy
@@ -194,6 +195,33 @@ MonoBehaviour:
   target: {fileID: 0}
   health: 6
   wavePointIndex: 0
+--- !u!54 &7545321160005488309
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160145473142525621}
+  serializedVersion: 4
+  m_Mass: 999
+  m_Drag: 999
+  m_AngularDrag: 999
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
 --- !u!1 &3133710656643114090
 GameObject:
   m_ObjectHideFlags: 0

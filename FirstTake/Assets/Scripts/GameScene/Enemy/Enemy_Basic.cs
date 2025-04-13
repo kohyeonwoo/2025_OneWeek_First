@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy_Basic : MonoBehaviour
+public class Enemy_Basic : MonoBehaviour, IDamageable
 {
     public Animator anim;
 
@@ -88,6 +88,8 @@ public class Enemy_Basic : MonoBehaviour
     public void Damage(float Damage)
     {
         health -= Damage;
+        ChangeColor();
+        Debug.Log("플레이어에게 맞았습니다");
 
         if (health < 0)
         {

@@ -557,6 +557,7 @@ GameObject:
   - component: {fileID: 4576990863814673720}
   - component: {fileID: 304926929656425120}
   - component: {fileID: 6261829768878078750}
+  - component: {fileID: -5909214645010933284}
   m_Layer: 7
   m_Name: Enemy_Tutle
   m_TagString: Enemy
@@ -643,6 +644,33 @@ MonoBehaviour:
   target: {fileID: 0}
   health: 7
   wavePointIndex: 0
+--- !u!54 &-5909214645010933284
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5216719666699148749}
+  serializedVersion: 4
+  m_Mass: 999
+  m_Drag: 999
+  m_AngularDrag: 999
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
 --- !u!1 &5354007597382550654
 GameObject:
   m_ObjectHideFlags: 0

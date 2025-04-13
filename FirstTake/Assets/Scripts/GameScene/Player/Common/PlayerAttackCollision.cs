@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerAttackCollision : MonoBehaviour
 {
-    public float Damage = 5.0f;
+    public float Damage;
 
     private void OnTriggerEnter(Collider other)
     {
