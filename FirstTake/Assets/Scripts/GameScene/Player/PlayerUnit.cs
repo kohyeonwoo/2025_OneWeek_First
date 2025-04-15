@@ -3,113 +3,129 @@ using System.Collections.Generic;
 using UnityEngine.AI;
 using UnityEngine;
 
+public enum UnitType { Basic, Dash, LongDistance, Boss }
+
 public class PlayerUnit : MonoBehaviour, IDamageable
 {
 
-    public float maxHealth;
-    public float currentHealth;
-    public GameObject attackCollision1;
-    public Transform target;
-    public NavMeshAgent nav;
+    public UnitType unitType;
+
+    public Rigidbody rigid;
     public Animator anim;
     public SkinnedMeshRenderer[] meshes;
+    public NavMeshAgent nav;
+    public BoxCollider meleeArea;
+    private CapsuleCollider capsuleCollider;
 
+    public int maxHealth;
+    public int currentHealth;
+    public int attackPoint;
+
+    float targetRadius = 0.0f;
+    float targetRange = 0.0f;
+
+    public bool bChase;
     public bool bAttack;
 
-    public float distanceToEnemy;
-
-    [SerializeField]
-    private float range = 7.5f;
-
-    [SerializeField]
-    private string targetTag = "Enemy";
-
-    [SerializeField]
-    private float attackRange = 1.0f;
-
-    [SerializeField]
-    private float attackRate = 1.0f;
-
-    [SerializeField]
-    private float attackCoolDown = 0.0f;
-
+    public Transform target;
+    public GameObject particleEffect;
+    public GameObject bullet;
 
     private void Awake()
     {
-        nav = GetComponent<NavMeshAgent>();
+        rigid = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
+        nav = GetComponent<NavMeshAgent>();
+        capsuleCollider = GetComponent<CapsuleCollider>();
         meshes = GetComponentsInChildren<SkinnedMeshRenderer>();
-        nav.updateRotation = false;
-        bAttack = false;
-    }
 
-    private void Start()
-    {
-        maxHealth = 25;
         currentHealth = maxHealth;
+
+        if (unitType != UnitType.Boss)
+        {
+            Invoke("ChaseStart", 1.0f);
+        }
+
+
     }
 
     private void Update()
     {
-
         UpdateTarget();
+        ChaseTarget();
+    }
 
-        if (target == null)
+    private void FixedUpdate()
+    { 
+        Targeting();
+        FreezeVelocity();
+    }
+
+    public void ChaseStart()
+    {
+        bChase = true;
+        anim.SetBool("bMove", true);
+    }
+
+    public void ChaseTarget()
+    {
+        if (nav.enabled && unitType != UnitType.Boss)
         {
-            return;
+            nav.SetDestination(target.position);
+            nav.isStopped = !bChase;
         }
-        else
+    }
+
+    protected void FreezeVelocity()
+    {
+        if (bChase)
         {
-            anim.SetBool("bMove", false);
+            rigid.velocity = Vector3.zero;
+            rigid.angularVelocity = Vector3.zero;
+        }
+    }
 
+    protected void Targeting()
+    {
+        //float targetRadius = 0.0f;
+        //float targetRange = 0.0f;
 
-            distanceToEnemy = Vector3.Distance(transform.position,
-            target.transform.position);
-
-            if (distanceToEnemy < attackRange)
-            { //목표 위치
-                Vector3 to = new Vector3(target.position.x, 0, target.position.z);
-                //내 위치
-                Vector3 from = new Vector3(transform.position.x, 0, transform.position.z);
-
-                //곧바로 목표를 향해 돌기
-                transform.rotation = Quaternion.LookRotation(to - from);
-
-                ////천천히 목표를 향해 돌기
-                //Quaternion rotation = Quaternion.LookRotation(to - from);
-                //transform.rotation = Quaternion.Slerp(transform.rotation, RotationDriveMode, 0.01f);
-
-                nav.isStopped = true;
-                Debug.Log("적이 공격 범위 내에 왔습니다");
-
-                if (attackCoolDown <= 0.0f)
-                {
-                    //anim.SetTrigger("Attack1");
-                    anim.SetBool("bAttack", true);
-                    attackCoolDown = 1.0f / attackRate;
-                }
-
-                attackCoolDown -= Time.deltaTime;
-
-
-            }
-            else
+        if (unitType != UnitType.Boss)
+        {
+            switch (unitType)
             {
-                anim.SetBool("bAttack", false);
-                nav.isStopped = false;
-                nav.SetDestination(target.position);
-                anim.SetBool("bMove", true);
+                case UnitType.Basic:
+                    targetRadius = 1.5f;
+                    targetRange = 3.0f;
+                    break;
+                case UnitType.Dash:
+                    targetRadius = 0.5f;
+                    targetRange = 12.0f;
+                    break;
+                case UnitType.LongDistance:
+                    targetRadius = 0.5f;
+                    targetRange = 25.0f;
+                    break;
             }
 
+            RaycastHit[] rayHits = Physics.SphereCastAll(transform.position,
+                targetRadius,
+                transform.forward,
+                targetRange,
+                LayerMask.GetMask("Enemy"));
 
-
+            if (rayHits.Length > 0 && !bAttack)
+            {
+                StartCoroutine(Attack());
+            }
         }
+
 
     }
 
     private void UpdateTarget()
     {
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag(targetTag);
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
 
         float shortestDistance = Mathf.Infinity; //�� ���� �����Ǿ� ���� ���� ���
 
@@ -128,7 +144,7 @@ public class PlayerUnit : MonoBehaviour, IDamageable
             }
         }
 
-        if (nearestEnemy != null && shortestDistance <= range)
+        if (nearestEnemy != null && shortestDistance <= targetRange)
         {
             target = nearestEnemy.transform;
         }
@@ -139,37 +155,95 @@ public class PlayerUnit : MonoBehaviour, IDamageable
 
     }
 
-    public void ActiveAttackCollision()
+    private IEnumerator Attack()
     {
-        attackCollision1.SetActive(true);
-    }
-
-    public void DeActiveAttackCollision()
-    {
-        attackCollision1.SetActive(false);
-    }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, range);
-
-        Gizmos.color = Color.white;
-        Gizmos.DrawWireSphere(transform.position, attackRange);
-    }
-
-    public void Damage(float Damage)
-    {
-        currentHealth -= Damage;
-
-        if(currentHealth <= 0)
+        bChase = false;
+        bAttack = true;
+        anim.SetBool("bAttack", true);
+      
+        switch (unitType)
         {
-            Dead();
+            case UnitType.Basic:
+
+                yield return new WaitForSeconds(0.2f);
+                meleeArea.enabled = true;
+
+                yield return new WaitForSeconds(1.0f);
+                meleeArea.enabled = false;
+
+                yield return new WaitForSeconds(1.0f);
+
+                break;
+
+            case UnitType.Dash:
+
+                yield return new WaitForSeconds(0.1f);
+                rigid.AddForce(this.transform.forward * 20, ForceMode.Impulse);
+
+                yield return new WaitForSeconds(0.5f);
+                rigid.velocity = Vector3.zero;
+
+                yield return new WaitForSeconds(2.0f);
+
+                break;
+
+            case UnitType.LongDistance:
+
+                yield return new WaitForSeconds(0.5f);
+                //총알 생성 부분 
+
+                break;
+        }
+
+
+
+        bChase = true;
+        bAttack = false;
+        anim.SetBool("bAttack", false);
+    }
+
+    IEnumerator ChangeColor()
+    {
+
+        foreach (SkinnedMeshRenderer mesh in meshes)
+        {
+            mesh.material.color = Color.red;
+        }
+
+        yield return new WaitForSeconds(0.3f);
+
+        foreach (SkinnedMeshRenderer mesh in meshes)
+        {
+            mesh.material.color = Color.white;
         }
     }
 
     private void Dead()
     {
+        bChase = false;
+        nav.enabled = false;
+        GameManager.Instance.killCount++;
+        anim.SetTrigger("Die");
+        Invoke("EraseBody", 2.0f);
+        //this.gameObject.SetActive(false);
+    }
+
+    private void EraseBody()
+    {
         this.gameObject.SetActive(false);
+    }
+
+    public void Damage(float Damage)
+    {
+        currentHealth -= (int)Damage;
+        StartCoroutine(ChangeColor());
+        AudioManager.Instance.PlaySFX("PlayerHitSound");
+        GameObject obj = Instantiate(particleEffect, transform.position, Quaternion.identity);
+        Destroy(obj, 2.0f);
+
+        if (currentHealth <= 0 && unitType != UnitType.Boss)
+        {
+            Dead();
+        }
     }
 }

@@ -392,6 +392,7 @@
 "Assets/Scripts/GameScene/Player/PlayerPartyMonster.cs"
 "Assets/Scripts/GameScene/Player/PlayerUnit.cs"
 "Assets/Scripts/GameScene/Player/PlayerUnit_LongDistance.cs"
+"Assets/Scripts/GameScene/Player/Player_CollectType.cs"
 "Assets/Scripts/GameScene/Player/Projectile.cs"
 "Assets/Scripts/GameScene/Player/Rake.cs"
 "Assets/Scripts/GameScene/Player/Rhino.cs"
