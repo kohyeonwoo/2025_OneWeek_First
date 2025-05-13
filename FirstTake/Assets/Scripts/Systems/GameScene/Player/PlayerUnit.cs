@@ -222,7 +222,6 @@ public class PlayerUnit : MonoBehaviour, IDamageable
     {
         bChase = false;
         nav.enabled = false;
-        GameManager.Instance.killCount++;
         anim.SetTrigger("Die");
         Invoke("EraseBody", 2.0f);
         //this.gameObject.SetActive(false);
