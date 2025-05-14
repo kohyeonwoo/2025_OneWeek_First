@@ -15,7 +15,7 @@ D:/Unity20251Week/FirstProject/2025_OneWeek_First/FirstTake
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-55299
+50342
 Successfully changed project path to: D:/Unity20251Week/FirstProject/2025_OneWeek_First/FirstTake
 D:/Unity20251Week/FirstProject/2025_OneWeek_First/FirstTake
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ D:/Unity20251Week/FirstProject/2025_OneWeek_First/FirstTake
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [25368] Host "[IP] 192.168.35.220 [Port] 0 [Flags] 2 [Guid] 3143001838 [EditorId] 3143001838 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CK3UCUG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [18904] Host "[IP] 192.168.35.220 [Port] 0 [Flags] 2 [Guid] 3666638285 [EditorId] 3666638285 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CK3UCUG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [25368] Host "[IP] 192.168.35.220 [Port] 0 [Flags] 2 [Guid] 3143001838 [EditorId] 3143001838 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CK3UCUG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [18904] Host "[IP] 192.168.35.220 [Port] 0 [Flags] 2 [Guid] 3666638285 [EditorId] 3666638285 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CK3UCUG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
-Refreshing native plugins compatible for Editor in 13.38 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 14.87 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.23f1 (dbb3f7c5b5c6)
 [Subsystems] Discovering subsystems at path D:/ForUnity/UnitySource/Editor/2022.3.23f1/Editor/Data/Resources/UnitySubsystems
@@ -70,47 +70,47 @@ Initialize mono
 Mono path[0] = 'D:/ForUnity/UnitySource/Editor/2022.3.23f1/Editor/Data/Managed'
 Mono path[1] = 'D:/ForUnity/UnitySource/Editor/2022.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/ForUnity/UnitySource/Editor/2022.3.23f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56728
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56816
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/ForUnity/UnitySource/Editor/2022.3.23f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: D:/ForUnity/UnitySource/Editor/2022.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.009035 seconds.
-- Loaded All Assemblies, in  0.490 seconds
+Registered in 0.009656 seconds.
+- Loaded All Assemblies, in  0.487 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 438 ms
+Android Extension - Scanning For ADB Devices 424 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.833 seconds
-Domain Reload Profiling: 1323ms
+- Finished resetting the current domain, in  0.817 seconds
+Domain Reload Profiling: 1304ms
 	BeginReloadAssembly (167ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (42ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (62ms)
-	LoadAllAssembliesAndSetupDomain (205ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (69ms)
+	LoadAllAssembliesAndSetupDomain (192ms)
 		LoadAssemblies (168ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (200ms)
-			TypeCache.Refresh (198ms)
-				TypeCache.ScanAssembly (180ms)
+		AnalyzeDomain (188ms)
+			TypeCache.Refresh (186ms)
+				TypeCache.ScanAssembly (169ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (834ms)
+	FinalizeReload (817ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (764ms)
+		SetupLoadedEditorAssemblies (748ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (569ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (547ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (129ms)
-			ProcessInitializeOnLoadMethodAttributes (59ms)
+			ProcessInitializeOnLoadAttributes (131ms)
+			ProcessInitializeOnLoadMethodAttributes (63ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -118,305 +118,53 @@ Domain Reload Profiling: 1323ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.824 seconds
-Refreshing native plugins compatible for Editor in 4.79 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.869 seconds
+Refreshing native plugins compatible for Editor in 5.77 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.776 seconds
-Domain Reload Profiling: 1600ms
-	BeginReloadAssembly (215ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (28ms)
-	RebuildCommonClasses (48ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (504ms)
-		LoadAssemblies (392ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (252ms)
-			TypeCache.Refresh (219ms)
-				TypeCache.ScanAssembly (196ms)
-			ScanForSourceGeneratedMonoScriptInfo (23ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (776ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (554ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (32ms)
-			SetLoadedEditorAssemblies (5ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (71ms)
-			ProcessInitializeOnLoadAttributes (416ms)
-			ProcessInitializeOnLoadMethodAttributes (26ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (19ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 12.09 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3273 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 33 unused Assets / (57.2 KB). Loaded Objects now: 3744.
-Memory consumption went from 139.9 MB to 139.9 MB.
-Total: 4.708700 ms (FindLiveObjects: 0.400900 ms CreateObjectMapping: 0.306100 ms MarkObjects: 3.857900 ms  DeleteObjects: 0.142600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.522 seconds
-Refreshing native plugins compatible for Editor in 3.97 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.120 seconds
-Domain Reload Profiling: 1642ms
-	BeginReloadAssembly (198ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (35ms)
-	RebuildCommonClasses (40ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (244ms)
-		LoadAssemblies (356ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (17ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (1121ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (424ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (28ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (62ms)
-			ProcessInitializeOnLoadAttributes (301ms)
-			ProcessInitializeOnLoadMethodAttributes (25ms)
-			AfterProcessingInitializeOnLoad (4ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (18ms)
-Refreshing native plugins compatible for Editor in 5.30 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3247 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 24 unused Assets / (31.1 KB). Loaded Objects now: 3747.
-Memory consumption went from 135.5 MB to 135.4 MB.
-Total: 4.890800 ms (FindLiveObjects: 0.372600 ms CreateObjectMapping: 0.264800 ms MarkObjects: 4.152600 ms  DeleteObjects: 0.099600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.590 seconds
-Refreshing native plugins compatible for Editor in 3.89 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.074 seconds
-Domain Reload Profiling: 1663ms
-	BeginReloadAssembly (232ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (37ms)
-	RebuildCommonClasses (51ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (30ms)
-	LoadAllAssembliesAndSetupDomain (263ms)
-		LoadAssemblies (392ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (29ms)
-			TypeCache.Refresh (12ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (9ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (1075ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (407ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (33ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (56ms)
-			ProcessInitializeOnLoadAttributes (287ms)
-			ProcessInitializeOnLoadMethodAttributes (24ms)
-			AfterProcessingInitializeOnLoad (4ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (17ms)
-Refreshing native plugins compatible for Editor in 5.38 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3247 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 24 unused Assets / (31.1 KB). Loaded Objects now: 3750.
-Memory consumption went from 137.4 MB to 137.4 MB.
-Total: 4.910700 ms (FindLiveObjects: 0.360300 ms CreateObjectMapping: 0.277800 ms MarkObjects: 4.197900 ms  DeleteObjects: 0.073700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.517 seconds
-Refreshing native plugins compatible for Editor in 4.15 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.164 seconds
-Domain Reload Profiling: 1680ms
-	BeginReloadAssembly (203ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (38ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (29ms)
-	LoadAllAssembliesAndSetupDomain (231ms)
-		LoadAssemblies (343ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (15ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (1165ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (460ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (27ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (63ms)
-			ProcessInitializeOnLoadAttributes (339ms)
-			ProcessInitializeOnLoadMethodAttributes (23ms)
-			AfterProcessingInitializeOnLoad (5ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (21ms)
-Refreshing native plugins compatible for Editor in 5.39 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3247 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 24 unused Assets / (31.1 KB). Loaded Objects now: 3753.
-Memory consumption went from 139.3 MB to 139.3 MB.
-Total: 4.173100 ms (FindLiveObjects: 0.404700 ms CreateObjectMapping: 0.301500 ms MarkObjects: 3.400300 ms  DeleteObjects: 0.064700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.518 seconds
-Refreshing native plugins compatible for Editor in 4.03 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.156 seconds
-Domain Reload Profiling: 1674ms
-	BeginReloadAssembly (211ms)
+- Finished resetting the current domain, in  0.721 seconds
+Domain Reload Profiling: 1590ms
+	BeginReloadAssembly (234ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (43ms)
-	RebuildCommonClasses (35ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (232ms)
-		LoadAssemblies (343ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (55ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (514ms)
+		LoadAssemblies (421ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (18ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (1157ms)
+		AnalyzeDomain (257ms)
+			TypeCache.Refresh (221ms)
+				TypeCache.ScanAssembly (195ms)
+			ScanForSourceGeneratedMonoScriptInfo (21ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (721ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (436ms)
+		SetupLoadedEditorAssemblies (514ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (25ms)
+			InitializePlatformSupportModulesInManaged (27ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (63ms)
-			ProcessInitializeOnLoadAttributes (310ms)
-			ProcessInitializeOnLoadMethodAttributes (30ms)
+			BeforeProcessingInitializeOnLoad (67ms)
+			ProcessInitializeOnLoadAttributes (388ms)
+			ProcessInitializeOnLoadMethodAttributes (25ms)
 			AfterProcessingInitializeOnLoad (4ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (20ms)
-Refreshing native plugins compatible for Editor in 6.02 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 6.47 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3247 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 24 unused Assets / (31.1 KB). Loaded Objects now: 3756.
-Memory consumption went from 141.3 MB to 141.2 MB.
-Total: 4.327000 ms (FindLiveObjects: 0.422700 ms CreateObjectMapping: 0.303200 ms MarkObjects: 3.529500 ms  DeleteObjects: 0.070500 ms)
+Unloading 3273 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (57.4 KB). Loaded Objects now: 3744.
+Memory consumption went from 140.2 MB to 140.2 MB.
+Total: 5.437300 ms (FindLiveObjects: 0.407100 ms CreateObjectMapping: 0.302500 ms MarkObjects: 4.577300 ms  DeleteObjects: 0.149200 ms)
 
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -430,3 +178,635 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 983.539794 seconds.
+  path: Assets/EnemyAssets/PartyMonsterDuo/Mesh/DefaultCharacterMesh_PBR01.fbx
+  artifactKey: Guid(ce779cf8c1f9f4e4d90ce2772d9f74fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EnemyAssets/PartyMonsterDuo/Mesh/DefaultCharacterMesh_PBR01.fbx using Guid(ce779cf8c1f9f4e4d90ce2772d9f74fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed9cc2dcdacca027122911f006c522cc') in 0.413290 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 156
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/EnemyAssets/PartyMonsterDuo/Mesh/StageMesh.fbx
+  artifactKey: Guid(d075acd8865fffe4e9475ceead36c4c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EnemyAssets/PartyMonsterDuo/Mesh/StageMesh.fbx using Guid(d075acd8865fffe4e9475ceead36c4c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fedcad2fc6b0c95b6cd0464b1434ed0b') in 0.036206 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.074938 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04
+  artifactKey: Guid(df44af7711411fa4ab55b39877b80677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04 using Guid(df44af7711411fa4ab55b39877b80677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a0659867f78fc708e239ab0835147d3') in 0.000576 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.011629 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Catcher_Medium.prefab
+  artifactKey: Guid(e7a32487bab1d1a42bede5466432e593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Catcher_Medium.prefab using Guid(e7a32487bab1d1a42bede5466432e593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6baa5502facd2c3cd8950d4b87ce1b8a') in 0.021451 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Treestor_Small.prefab
+  artifactKey: Guid(677d720f80efb014facf088b8ee95d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Treestor_Small.prefab using Guid(677d720f80efb014facf088b8ee95d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04abc9a81d587184afa2ff254c8e4711') in 0.018820 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Monkeydong_Medium.prefab
+  artifactKey: Guid(6f16104f9d964f34da8a8da9bfbf76c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Monkeydong_Medium.prefab using Guid(6f16104f9d964f34da8a8da9bfbf76c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1ba50b6c0df4c20fa5b1235ff66f281') in 0.020236 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Treestor_Medium.prefab
+  artifactKey: Guid(b66fc6e3952f45148bd23b4071aab53f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Treestor_Medium.prefab using Guid(b66fc6e3952f45148bd23b4071aab53f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49f8c39774f964e7774c78561019fd83') in 0.021736 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Imp_Small.prefab
+  artifactKey: Guid(0c4d8310e8543c44dbf661fd51aaff84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Imp_Small.prefab using Guid(0c4d8310e8543c44dbf661fd51aaff84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d2d7ac824a1bc77e26e00378ee86f26') in 0.018590 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Nosedman_Medium.prefab
+  artifactKey: Guid(8bb1a0c416399ca41aad924bf25bc19c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Nosedman_Medium.prefab using Guid(8bb1a0c416399ca41aad924bf25bc19c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be734ff72963613324e35131f8756463') in 0.016903 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Imp_Medium.prefab
+  artifactKey: Guid(e360d39dc920f174d946dd26fa16bf81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Imp_Medium.prefab using Guid(e360d39dc920f174d946dd26fa16bf81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad59c5cd10bfef95eb09033ead9d6a28') in 0.016683 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Knight_Small.prefab
+  artifactKey: Guid(5ba86818bdd2c7844b8b3665a9b306d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Knight_Small.prefab using Guid(5ba86818bdd2c7844b8b3665a9b306d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d7e50e2235128f606416e8918ae2fd8') in 0.016425 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Fishguard_Big.prefab
+  artifactKey: Guid(8aef96368da180448a85a8e7c6f4c807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Fishguard_Big.prefab using Guid(8aef96368da180448a85a8e7c6f4c807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2995f93a7f35c10b0eb964f4061ada16') in 0.018371 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Wedger_Small.prefab
+  artifactKey: Guid(c71169ed2990cbc45a1c45d7a82d9738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Wedger_Small.prefab using Guid(c71169ed2990cbc45a1c45d7a82d9738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c90eeb1d37776276aa0dde0a64bb4ebb') in 0.015811 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Spike_Big.prefab
+  artifactKey: Guid(979d0c389883813448b6ab96c499784e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Spike_Big.prefab using Guid(979d0c389883813448b6ab96c499784e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '158cfaf069b5f1bff0ffc3908ce9eeda') in 0.018614 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Nosedman_Big.prefab
+  artifactKey: Guid(633942d104fd98d4bbea2b737c72a3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Nosedman_Big.prefab using Guid(633942d104fd98d4bbea2b737c72a3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9acc5fee9618da58f9046f773fc6d30f') in 0.018826 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Pitboy_Small.prefab
+  artifactKey: Guid(e9ffa864fa310ed4b81989b56fc979c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Pitboy_Small.prefab using Guid(e9ffa864fa310ed4b81989b56fc979c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56e0095a15fad50b395f02330595fbf7') in 0.017646 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Imp_Big.prefab
+  artifactKey: Guid(c1b0205e9eeab1945a358c6b6077df0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Imp_Big.prefab using Guid(c1b0205e9eeab1945a358c6b6077df0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9e4b0a354f5e6d62a0068d8ee0d6fa0') in 0.017523 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Spike_Small.prefab
+  artifactKey: Guid(ec4f5a605f1ef1d40b31cf84954ad46e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Spike_Small.prefab using Guid(ec4f5a605f1ef1d40b31cf84954ad46e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb276426ec8424639b9be288a27012e1') in 0.017347 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 2.536275 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/01_Knight_S.fbx
+  artifactKey: Guid(bad29a4342283e640a0aa6c3cfba78f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/01_Knight_S.fbx using Guid(bad29a4342283e640a0aa6c3cfba78f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f2f33e4671525a660dba7b9200c0459') in 0.037896 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/02_Imp_M.fbx
+  artifactKey: Guid(575048d3209c7eb45b8b47899b820115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/02_Imp_M.fbx using Guid(575048d3209c7eb45b8b47899b820115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ffc98f59ac5099e631e187af8686e3e') in 0.040342 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/Wedger_M.fbx
+  artifactKey: Guid(f7258f4a8b112644780f66cff07896fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/Wedger_M.fbx using Guid(f7258f4a8b112644780f66cff07896fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e085b8df1e53a78e0326bfd22cb0902b') in 0.041750 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/01_Pitboy_S.fbx
+  artifactKey: Guid(33e39f2cd36e7524ab1a929da2e8fb49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/01_Pitboy_S.fbx using Guid(33e39f2cd36e7524ab1a929da2e8fb49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbc6d92e4b0e85cfb17530660ca5ba25') in 0.040372 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/FishGuard_M.fbx
+  artifactKey: Guid(9dc7ec4449f23af4aa5b9a00101da523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/FishGuard_M.fbx using Guid(9dc7ec4449f23af4aa5b9a00101da523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec77bda8273e20b16b06a7547666ef81') in 0.038823 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 81
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/Catcher_M.fbx
+  artifactKey: Guid(31e83514f4ff2334cbd2d3ece69b1fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/Catcher_M.fbx using Guid(31e83514f4ff2334cbd2d3ece69b1fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f00ead26c94643ec126fd8399b371a9') in 0.039170 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/02_Nosedman_M.fbx
+  artifactKey: Guid(b5797974ab4616747916a2821b295ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/02_Nosedman_M.fbx using Guid(b5797974ab4616747916a2821b295ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a22017ef308dc7e7d631b7c3ddfcc109') in 0.039996 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/03_Pitboy_L.fbx
+  artifactKey: Guid(642e5849f6da2994fa08e601fd0ccd18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/03_Pitboy_L.fbx using Guid(642e5849f6da2994fa08e601fd0ccd18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aed969f6229bea714cab4aecb985d9f') in 0.036341 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/03_Monkeydong_B.fbx
+  artifactKey: Guid(16e4cbdb8f8975549b00c28d38de8814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/03_Monkeydong_B.fbx using Guid(16e4cbdb8f8975549b00c28d38de8814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad508fecaa4720c741bd1636039977c5') in 0.044020 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Materials/M_Catcher.mat
+  artifactKey: Guid(c93028308ed416145b6c72056937391a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Materials/M_Catcher.mat using Guid(c93028308ed416145b6c72056937391a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a420afae0ee05fda31e05d9e8348e3f') in 0.087964 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Materials/M_Spike.mat
+  artifactKey: Guid(a439085ee7e0bab458747ddc721d75c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Materials/M_Spike.mat using Guid(a439085ee7e0bab458747ddc721d75c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c796169cd062a78f2e116e629228ba9c') in 0.008780 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Materials/M_Knight.mat
+  artifactKey: Guid(a1173d5b97956d549927a6695835929e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Materials/M_Knight.mat using Guid(a1173d5b97956d549927a6695835929e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '807281471c5cd607e9733b8bf56315b9') in 0.008351 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/03_Treestor_H.fbx
+  artifactKey: Guid(608b5a873bd718c4f92fe913c4e4032d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/03_Treestor_H.fbx using Guid(608b5a873bd718c4f92fe913c4e4032d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bca683c628aec2d2b0d321ff8f85bc9') in 0.041980 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Materials/M_Nosedman.mat
+  artifactKey: Guid(1808c9c7a1787274596913fe021ed35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Materials/M_Nosedman.mat using Guid(1808c9c7a1787274596913fe021ed35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20c485aa490eeefa287c6c54a7bc518b') in 0.007671 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Materials/M_Pitboy.mat
+  artifactKey: Guid(fa05bc17931a3604eba92804c4c20fcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Materials/M_Pitboy.mat using Guid(fa05bc17931a3604eba92804c4c20fcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a435412d54e507c461f010ae30835910') in 0.008881 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Materials/M_Fishguard.mat
+  artifactKey: Guid(f52077039f072704d9fe4ccf6cbae467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Materials/M_Fishguard.mat using Guid(f52077039f072704d9fe4ccf6cbae467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f07e932a7a69142a38b357a342c0d0c1') in 0.014566 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/Catcher_S.fbx
+  artifactKey: Guid(b181abd3545fe7545bfd8726fbb52024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/Catcher_S.fbx using Guid(b181abd3545fe7545bfd8726fbb52024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7b5686602f4cdfeaa68088a195fe2e6') in 0.040373 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/02_Pitboy_M.fbx
+  artifactKey: Guid(9ccd5b09650da764e9fab054593555f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/02_Pitboy_M.fbx using Guid(9ccd5b09650da764e9fab054593555f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb879e2275901625bad3a1b3e13f8c01') in 0.041558 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/03_Imp_H.fbx
+  artifactKey: Guid(8f9ee73fe9107404ba770f74be1c6cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/03_Imp_H.fbx using Guid(8f9ee73fe9107404ba770f74be1c6cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c73b2992cf39cf418d0f654a8ceb208c') in 0.039765 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Materials/M_Imp.mat
+  artifactKey: Guid(99aae1bca7b1e2940b5be9d5fd8abc5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Materials/M_Imp.mat using Guid(99aae1bca7b1e2940b5be9d5fd8abc5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11cca5f77efeaf13a12ebfe8d3a697f0') in 0.007269 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/01_Nosedman_S.fbx
+  artifactKey: Guid(a6a1964ee63cb9b4484be19c9579b178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/01_Nosedman_S.fbx using Guid(a6a1964ee63cb9b4484be19c9579b178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '257ba2741f12e3ef8a3d34c0fb4905dd') in 0.041042 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Materials/M_Monkeydong.mat
+  artifactKey: Guid(5aeefeed7dce1f7478925a43ec72941b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Materials/M_Monkeydong.mat using Guid(5aeefeed7dce1f7478925a43ec72941b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5d0f74ea901d399254c4b79bfe8153f') in 0.006371 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 10.840444 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Textures/Tex_Imp.png
+  artifactKey: Guid(4f6fd1b797a4f8b4d96fe033a4928645) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Textures/Tex_Imp.png using Guid(4f6fd1b797a4f8b4d96fe033a4928645) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01f0a73526f02e1d56b3fa75b4d22a87') in 0.041232 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Textures/Tex_Treestor.png
+  artifactKey: Guid(dd9183a7c2115ae4d972b683ed0fe954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Textures/Tex_Treestor.png using Guid(dd9183a7c2115ae4d972b683ed0fe954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33e3a797174b192e1e64f286963a8ffd') in 0.021228 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Textures/Tex_Nosedman.png
+  artifactKey: Guid(0673901d7bb3e1a408ffd1754ad3e8cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Textures/Tex_Nosedman.png using Guid(0673901d7bb3e1a408ffd1754ad3e8cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa79d68918fd35c5fd8f62a597eccf40') in 0.016689 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Textures/Tex_Wedger.png
+  artifactKey: Guid(72c5bb31a23893644b76b01828627d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Textures/Tex_Wedger.png using Guid(72c5bb31a23893644b76b01828627d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56a1ea1b1c4fb64632c69dd106dd9108') in 0.015750 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Textures/Tex_Monkeydong.png
+  artifactKey: Guid(db8df74bbecb64b41a0ac10c2a5d0ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Textures/Tex_Monkeydong.png using Guid(db8df74bbecb64b41a0ac10c2a5d0ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e172b7d9cb65c70b58bb0baec578eec') in 0.021733 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 96.903534 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Materials/M_Fishguard.mat
+  artifactKey: Guid(f52077039f072704d9fe4ccf6cbae467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Materials/M_Fishguard.mat using Guid(f52077039f072704d9fe4ccf6cbae467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '993836e12f18ddcaa4258adec0149238') in 0.030535 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Materials/M_Wedger.mat
+  artifactKey: Guid(5d65794e28976844f85d4f524ac247f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Materials/M_Wedger.mat using Guid(5d65794e28976844f85d4f524ac247f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2a239af18d68e7cd0b38daef77a0d27') in 0.019705 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Materials/M_Nosedman.mat
+  artifactKey: Guid(1808c9c7a1787274596913fe021ed35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Materials/M_Nosedman.mat using Guid(1808c9c7a1787274596913fe021ed35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd70ccf8aa8acb0337d5057450a32d132') in 0.017867 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Materials/M_Pitboy.mat
+  artifactKey: Guid(fa05bc17931a3604eba92804c4c20fcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Materials/M_Pitboy.mat using Guid(fa05bc17931a3604eba92804c4c20fcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '840f551a309389a406a2b44cf89296ac') in 0.018879 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Materials/M_Monkeydong.mat
+  artifactKey: Guid(5aeefeed7dce1f7478925a43ec72941b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Materials/M_Monkeydong.mat using Guid(5aeefeed7dce1f7478925a43ec72941b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a5e5e6efba3db7737d89576dc254e3b') in 0.029920 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.733375 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/01_Knight_S.fbx
+  artifactKey: Guid(bad29a4342283e640a0aa6c3cfba78f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/01_Knight_S.fbx using Guid(bad29a4342283e640a0aa6c3cfba78f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2adabd639dbc0419545ac0468ee0e401') in 0.043265 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/02_Imp_M.fbx
+  artifactKey: Guid(575048d3209c7eb45b8b47899b820115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/02_Imp_M.fbx using Guid(575048d3209c7eb45b8b47899b820115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4162e816eb0e2c212c22044a8e1fe8df') in 0.050586 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/03_Nosedman_B.fbx
+  artifactKey: Guid(9cb507988ceb38a4581af8ad0e66227f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/03_Nosedman_B.fbx using Guid(9cb507988ceb38a4581af8ad0e66227f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98e32cfb9af4b9e2652eb1c2b0200783') in 0.044477 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/03_Spike_H.fbx
+  artifactKey: Guid(6822d86c91de574439750aa39277da92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/03_Spike_H.fbx using Guid(6822d86c91de574439750aa39277da92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6eff12efe5e62ff9cc0a0121d245d7ec') in 0.043597 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/02_Monkeydong_M.fbx
+  artifactKey: Guid(c4dde838b6217804d9fd6713e9209190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/02_Monkeydong_M.fbx using Guid(c4dde838b6217804d9fd6713e9209190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e5f4b6d9e5aae6b30bf52ee09d3d77c') in 0.046392 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/03_Knight_H.fbx
+  artifactKey: Guid(516249d19e479c94c93ac83007c8064c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/03_Knight_H.fbx using Guid(516249d19e479c94c93ac83007c8064c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6042498b4e5058e350df104680c759e2') in 0.047788 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/02_Spike_M.fbx
+  artifactKey: Guid(c565ff15b85e36444ab06f2abceed5e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/02_Spike_M.fbx using Guid(c565ff15b85e36444ab06f2abceed5e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ef966bd95bfaf2fcd8437dbe7c52ed9') in 0.048098 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/01_Treestor_S.fbx
+  artifactKey: Guid(4f4f2a65179a897458b54d1269d5dea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/01_Treestor_S.fbx using Guid(4f4f2a65179a897458b54d1269d5dea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe1c61fc6520f78da44b83d3bb26c673') in 0.047898 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/Catcher_B.fbx
+  artifactKey: Guid(5179826d65ae57d4b989e6a6ab22e7cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/Catcher_B.fbx using Guid(5179826d65ae57d4b989e6a6ab22e7cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b298e2f0b3be9f42d650f48886dd930') in 0.041438 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/03_Treestor_H.fbx
+  artifactKey: Guid(608b5a873bd718c4f92fe913c4e4032d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/03_Treestor_H.fbx using Guid(608b5a873bd718c4f92fe913c4e4032d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67962b8fd44e89277fc0fd57ab6aba4b') in 0.044184 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/Catcher_S.fbx
+  artifactKey: Guid(b181abd3545fe7545bfd8726fbb52024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/Catcher_S.fbx using Guid(b181abd3545fe7545bfd8726fbb52024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da0f5b8208b7b0f1e5e7536c59e7e9d6') in 0.040748 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/02_Pitboy_M.fbx
+  artifactKey: Guid(9ccd5b09650da764e9fab054593555f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/02_Pitboy_M.fbx using Guid(9ccd5b09650da764e9fab054593555f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a93dda1eba191a6451c56c7a3dd8cf43') in 0.033836 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/02_Knight_M.fbx
+  artifactKey: Guid(817f57f630785e44abbf0df50b964965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/02_Knight_M.fbx using Guid(817f57f630785e44abbf0df50b964965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4112167511609a885c1db89ec10105d3') in 0.034794 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/01_Nosedman_S.fbx
+  artifactKey: Guid(a6a1964ee63cb9b4484be19c9579b178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Meshes/01_Nosedman_S.fbx using Guid(a6a1964ee63cb9b4484be19c9579b178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5442408dc70b9a049de6cfda4c53bf1c') in 0.031969 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 0.031819 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Catcher_Medium.prefab
+  artifactKey: Guid(e7a32487bab1d1a42bede5466432e593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Catcher_Medium.prefab using Guid(e7a32487bab1d1a42bede5466432e593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcec37b586a9fefad69bd02f200d7008') in 0.016823 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Treestor_Small.prefab
+  artifactKey: Guid(677d720f80efb014facf088b8ee95d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Treestor_Small.prefab using Guid(677d720f80efb014facf088b8ee95d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b34ee806035425869df73b3b6d421375') in 0.017647 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Knight_Medium.prefab
+  artifactKey: Guid(77a0f8dbba6daeb4ba0622a8b5d10057) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Knight_Medium.prefab using Guid(77a0f8dbba6daeb4ba0622a8b5d10057) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3e55071fd4ae55f387bc57e2de858f6') in 0.020439 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Treestor_Medium.prefab
+  artifactKey: Guid(b66fc6e3952f45148bd23b4071aab53f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Treestor_Medium.prefab using Guid(b66fc6e3952f45148bd23b4071aab53f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0ac2af26f13088c4112935ab8496f5d') in 0.018701 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Imp_Small.prefab
+  artifactKey: Guid(0c4d8310e8543c44dbf661fd51aaff84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Imp_Small.prefab using Guid(0c4d8310e8543c44dbf661fd51aaff84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cd71c1bf0aaff0dc74ba6c29c9f878e') in 0.018257 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Fishguard_Small.prefab
+  artifactKey: Guid(f3c5acfba5fc62c4eaad3cfd5e36d912) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Fishguard_Small.prefab using Guid(f3c5acfba5fc62c4eaad3cfd5e36d912) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6074caeea086f031f13be1a66ef77fce') in 0.019904 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Monkeydong_Small.prefab
+  artifactKey: Guid(efbb87e3b22e2544799b2081dd39e189) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Monkeydong_Small.prefab using Guid(efbb87e3b22e2544799b2081dd39e189) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a7c836eed12f8643158ff040c73c0ce') in 0.018024 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Nosedman_Small.prefab
+  artifactKey: Guid(993f4c94726610d43954ce4123e65466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Nosedman_Small.prefab using Guid(993f4c94726610d43954ce4123e65466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbec0ee7a1e241741cb4884a2dc630ba') in 0.016521 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Fishguard_Big.prefab
+  artifactKey: Guid(8aef96368da180448a85a8e7c6f4c807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Fishguard_Big.prefab using Guid(8aef96368da180448a85a8e7c6f4c807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34b6b1da485bf77525a698a1fc9fba4f') in 0.017940 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Wedger_Small.prefab
+  artifactKey: Guid(c71169ed2990cbc45a1c45d7a82d9738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Wedger_Small.prefab using Guid(c71169ed2990cbc45a1c45d7a82d9738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1480f3244d4d445c04187ef2a16cf32') in 0.017078 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Spike_Big.prefab
+  artifactKey: Guid(979d0c389883813448b6ab96c499784e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Spike_Big.prefab using Guid(979d0c389883813448b6ab96c499784e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc9490eb31db926cac9151dde387b672') in 0.018430 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Nosedman_Big.prefab
+  artifactKey: Guid(633942d104fd98d4bbea2b737c72a3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Nosedman_Big.prefab using Guid(633942d104fd98d4bbea2b737c72a3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a21ad35f14c1d7f31bbe7c77df75d12a') in 0.018368 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Wedger_Big.prefab
+  artifactKey: Guid(c6072a9210d2e734cacd741b1bc2d0bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Wedger_Big.prefab using Guid(c6072a9210d2e734cacd741b1bc2d0bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3a7d327610dc98a2927fab601442303') in 0.016525 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Pitboy_Big.prefab
+  artifactKey: Guid(87ce815692588ec4ea9a619331776d10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Pitboy_Big.prefab using Guid(87ce815692588ec4ea9a619331776d10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f41f64e19f1a4f7347c8eb79ba7a6e6') in 0.016637 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Spike_Small.prefab
+  artifactKey: Guid(ec4f5a605f1ef1d40b31cf84954ad46e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForPlayerAsset/NOTFUN/Monsters Pack 04/Prefab/Spike_Small.prefab using Guid(ec4f5a605f1ef1d40b31cf84954ad46e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e67c2771e7dd16516ec7eee776f8c315') in 0.017434 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
