@@ -1252,15 +1252,15 @@ GameObject:
   - component: {fileID: 3987771132369693527}
   - component: {fileID: 5324066253967094704}
   - component: {fileID: 5905369404161431996}
-  - component: {fileID: 1855873703494117757}
   - component: {fileID: 2280028875833446073}
+  - component: {fileID: 1965062750559146867}
   m_Layer: 0
   m_Name: Beetle
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1193516464796804276
 Transform:
   m_ObjectHideFlags: 0
@@ -1361,28 +1361,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &1855873703494117757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7727390254607296626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3679f758e8f2388459ead5d4e97cdf23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  unitState: 0
-  targetTag: Enemy
-  targetRGRange: 5
-  psLimitRange: 7
-  atRange: 3
-  attackSpeed: 1
-  lastAttackTime: 2
-  walkSpeed: 2
-  runSpeed: 5
-  _target: {fileID: 0}
 --- !u!54 &2280028875833446073
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1410,6 +1388,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 1
+--- !u!114 &1965062750559146867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7727390254607296626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44e333f1096295c44815bde64cc7701a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
 --- !u!1 &7845478833186813760
 GameObject:
   m_ObjectHideFlags: 0

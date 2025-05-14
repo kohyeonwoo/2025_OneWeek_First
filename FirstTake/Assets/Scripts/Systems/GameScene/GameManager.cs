@@ -16,6 +16,10 @@ public class GameManager : MonoBehaviour
 
     public GameObject endGamePanel;
 
+    public List<GameObject> spirits = new List<GameObject>();
+
+    public int randomNum;
+
     private void Awake()
     {
         if(Instance == null)
@@ -27,6 +31,10 @@ public class GameManager : MonoBehaviour
     void Start()
     {   
         isPause = false;
+
+        randomNum = Random.Range(0, 2);
+
+        spirits[randomNum].SetActive(true);
     }
 
     public void RestartLevel()
