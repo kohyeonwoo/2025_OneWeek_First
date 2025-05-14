@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
     {   
         isPause = false;
 
-        randomNum = Random.Range(0, 2);
+        randomNum = Random.Range(0, 4);
 
         spirits[randomNum].SetActive(true);
     }
