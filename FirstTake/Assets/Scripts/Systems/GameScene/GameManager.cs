@@ -16,9 +16,17 @@ public class GameManager : MonoBehaviour
 
     public GameObject endGamePanel;
 
+    public GameObject changeParticle;
+
+    public GameObject changeParticleLocation;
+
     public List<GameObject> spirits = new List<GameObject>();
 
+    public List<GameObject> Monsters_Spike = new List<GameObject>();
+
     public int randomNum;
+
+    public float time;
 
     private void Awake()
     {
@@ -28,13 +36,26 @@ public class GameManager : MonoBehaviour
         }        
     }
 
-    void Start()
+    private void Start()
     {   
         isPause = false;
 
         randomNum = Random.Range(0, 4);
 
+        time = 0.0f;
+
         spirits[randomNum].SetActive(true);
+    }
+
+    private void Update()
+    {
+        time += Time.deltaTime; 
+        
+        if(time > 10.0f)
+        {
+            Evolve();
+        }
+
     }
 
     public void RestartLevel()
@@ -72,6 +93,17 @@ public class GameManager : MonoBehaviour
     public void SetActiveEndPanel()
     {
         endGamePanel.SetActive(true);   
+    }
+
+    public void Evolve()
+    {
+        for(int i =0; i < spirits.Count; i++)
+        {
+            spirits[i].SetActive(false);
+        }
+
+        Monsters_Spike[0].SetActive(true);
+
     }
 
     public void Quit()
