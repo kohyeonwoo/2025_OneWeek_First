@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
     {
         time += Time.deltaTime; 
         
-        if(time > 10.0f)
+        if(time > 100.0f)
         {
             Evolve();
         }
