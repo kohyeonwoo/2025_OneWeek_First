@@ -638,7 +638,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 101934888}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 705692686}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: DecreaseMoney
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &101934888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1982,7 +1994,9 @@ MonoBehaviour:
   - {fileID: 7076029219957984230}
   - {fileID: 224629105}
   - {fileID: 1522201831}
+  playerMoneyText: {fileID: 1394186054}
   randomNum: 0
+  playerMoney: 0
   time: 0
 --- !u!1001 &714076839
 PrefabInstance:
@@ -2134,7 +2148,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 759115847}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 705692686}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: DecreaseMoney
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &759115847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3965,7 +3991,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1599004881}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 705692686}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: DecreaseMoney
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1599004881
 MonoBehaviour:
   m_ObjectHideFlags: 0

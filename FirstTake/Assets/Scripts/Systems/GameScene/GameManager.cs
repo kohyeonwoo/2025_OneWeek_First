@@ -24,7 +24,11 @@ public class GameManager : MonoBehaviour
 
     public List<GameObject> Monsters_Spike = new List<GameObject>();
 
+    public TextMeshProUGUI playerMoneyText;
+
     public int randomNum;
+
+    public int playerMoney;
 
     public float time;
 
@@ -49,6 +53,9 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+
+        playerMoneyText.text = playerMoney.ToString();
+
         time += Time.deltaTime; 
         
         if(time > 100.0f)
@@ -95,6 +102,21 @@ public class GameManager : MonoBehaviour
         endGamePanel.SetActive(true);   
     }
 
+    public void IncreaseMoney()
+    {
+        playerMoney += 100;
+    }
+
+    public void DecreaseMoney()
+    {
+        if(playerMoney < 100)
+        {
+            return;
+        }
+
+        playerMoney -= 100;
+    }
+  
     public void Evolve()
     {
         for(int i =0; i < spirits.Count; i++)
