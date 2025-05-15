@@ -30,6 +30,8 @@ public class GameManager : MonoBehaviour
 
     public int playerMoney;
 
+    public int blueGemCount;
+
     public float time;
 
     private void Awake()
@@ -48,6 +50,8 @@ public class GameManager : MonoBehaviour
 
         time = 0.0f;
 
+        blueGemCount = 0;
+
         spirits[randomNum].SetActive(true);
     }
 
@@ -58,7 +62,12 @@ public class GameManager : MonoBehaviour
 
         time += Time.deltaTime; 
         
-        if(time > 100.0f)
+        //if(time > 100.0f)
+        //{
+        //    Evolve();
+        //}
+
+        if(blueGemCount >= 50)
         {
             Evolve();
         }
@@ -117,6 +126,11 @@ public class GameManager : MonoBehaviour
         playerMoney -= 100;
     }
   
+    public void IncreaseBlueGemCount()
+    {
+        blueGemCount++;
+    }
+
     public void Evolve()
     {
         for(int i =0; i < spirits.Count; i++)
