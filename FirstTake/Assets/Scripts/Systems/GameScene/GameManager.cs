@@ -20,10 +20,6 @@ public class GameManager : MonoBehaviour
 
     public GameObject changeParticleLocation;
 
-    public List<GameObject> spirits = new List<GameObject>();
-
-    public List<GameObject> Monsters_Spike = new List<GameObject>();
-
     public TextMeshProUGUI playerMoneyText;
 
     public int randomNum;
@@ -52,7 +48,6 @@ public class GameManager : MonoBehaviour
 
         blueGemCount = 0;
 
-        spirits[randomNum].SetActive(true);
     }
 
     private void Update()
@@ -61,17 +56,7 @@ public class GameManager : MonoBehaviour
         playerMoneyText.text = playerMoney.ToString();
 
         time += Time.deltaTime; 
-        
-        //if(time > 100.0f)
-        //{
-        //    Evolve();
-        //}
-
-        if(blueGemCount >= 50)
-        {
-            Evolve();
-        }
-
+   
     }
 
     public void RestartLevel()
@@ -129,17 +114,6 @@ public class GameManager : MonoBehaviour
     public void IncreaseBlueGemCount()
     {
         blueGemCount++;
-    }
-
-    public void Evolve()
-    {
-        for(int i =0; i < spirits.Count; i++)
-        {
-            spirits[i].SetActive(false);
-        }
-
-        Monsters_Spike[0].SetActive(true);
-
     }
 
     public void Quit()
