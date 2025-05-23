@@ -15,7 +15,7 @@ D:/Unity20251Week/FirstProject/2025_OneWeek_First/FirstTake
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51548
+51399
 Successfully changed project path to: D:/Unity20251Week/FirstProject/2025_OneWeek_First/FirstTake
 D:/Unity20251Week/FirstProject/2025_OneWeek_First/FirstTake
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ D:/Unity20251Week/FirstProject/2025_OneWeek_First/FirstTake
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [7424] Host "[IP] 192.168.35.220 [Port] 0 [Flags] 2 [Guid] 3903712441 [EditorId] 3903712441 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CK3UCUG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [15048] Host "[IP] 192.168.35.220 [Port] 0 [Flags] 2 [Guid] 2698184689 [EditorId] 2698184689 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CK3UCUG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [7424] Host "[IP] 192.168.35.220 [Port] 0 [Flags] 2 [Guid] 3903712441 [EditorId] 3903712441 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CK3UCUG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [15048] Host "[IP] 192.168.35.220 [Port] 0 [Flags] 2 [Guid] 2698184689 [EditorId] 2698184689 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CK3UCUG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
-Refreshing native plugins compatible for Editor in 12.81 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 17.32 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.23f1 (dbb3f7c5b5c6)
 [Subsystems] Discovering subsystems at path D:/ForUnity/UnitySource/Editor/2022.3.23f1/Editor/Data/Resources/UnitySubsystems
@@ -70,47 +70,47 @@ Initialize mono
 Mono path[0] = 'D:/ForUnity/UnitySource/Editor/2022.3.23f1/Editor/Data/Managed'
 Mono path[1] = 'D:/ForUnity/UnitySource/Editor/2022.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/ForUnity/UnitySource/Editor/2022.3.23f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56940
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56156
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/ForUnity/UnitySource/Editor/2022.3.23f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: D:/ForUnity/UnitySource/Editor/2022.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.009221 seconds.
-- Loaded All Assemblies, in  0.449 seconds
+Registered in 0.009228 seconds.
+- Loaded All Assemblies, in  0.466 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 422 ms
+Android Extension - Scanning For ADB Devices 418 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.786 seconds
-Domain Reload Profiling: 1234ms
-	BeginReloadAssembly (162ms)
+- Finished resetting the current domain, in  0.818 seconds
+Domain Reload Profiling: 1284ms
+	BeginReloadAssembly (155ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (36ms)
-	RebuildNativeTypeToScriptingClass (11ms)
+	RebuildCommonClasses (48ms)
+	RebuildNativeTypeToScriptingClass (14ms)
 	initialDomainReloadingComplete (59ms)
-	LoadAllAssembliesAndSetupDomain (179ms)
-		LoadAssemblies (163ms)
+	LoadAllAssembliesAndSetupDomain (189ms)
+		LoadAssemblies (156ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (176ms)
-			TypeCache.Refresh (174ms)
-				TypeCache.ScanAssembly (159ms)
+		AnalyzeDomain (185ms)
+			TypeCache.Refresh (184ms)
+				TypeCache.ScanAssembly (169ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (786ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (819ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (726ms)
+		SetupLoadedEditorAssemblies (757ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (535ms)
+			InitializePlatformSupportModulesInManaged (545ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (126ms)
-			ProcessInitializeOnLoadMethodAttributes (58ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (139ms)
+			ProcessInitializeOnLoadMethodAttributes (65ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -118,934 +118,53 @@ Domain Reload Profiling: 1234ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.752 seconds
-Refreshing native plugins compatible for Editor in 4.34 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.790 seconds
+Refreshing native plugins compatible for Editor in 3.59 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.633 seconds
-Domain Reload Profiling: 1385ms
-	BeginReloadAssembly (204ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (28ms)
-	RebuildCommonClasses (38ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (452ms)
-		LoadAssemblies (381ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (205ms)
-			TypeCache.Refresh (179ms)
-				TypeCache.ScanAssembly (161ms)
-			ScanForSourceGeneratedMonoScriptInfo (17ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (634ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (462ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (28ms)
-			SetLoadedEditorAssemblies (5ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (56ms)
-			ProcessInitializeOnLoadAttributes (346ms)
-			ProcessInitializeOnLoadMethodAttributes (22ms)
-			AfterProcessingInitializeOnLoad (5ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (19ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 5.44 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3273 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 33 unused Assets / (57.4 KB). Loaded Objects now: 3744.
-Memory consumption went from 140.0 MB to 139.9 MB.
-Total: 5.082200 ms (FindLiveObjects: 0.313600 ms CreateObjectMapping: 0.279400 ms MarkObjects: 4.344400 ms  DeleteObjects: 0.143800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 5166.037016 seconds.
-  path: Assets/EnemyAssets/Free Burrow Cute Series
-  artifactKey: Guid(2400d7d1ece70354784c6410039af50e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/EnemyAssets/Free Burrow Cute Series using Guid(2400d7d1ece70354784c6410039af50e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '718a164660ebde075a989709e48eb0c3') in 0.003245 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 65.754031 seconds.
-  path: Assets/PlayerAsset
-  artifactKey: Guid(43382e8503ae3fc489f7bbc9cda79762) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset using Guid(43382e8503ae3fc489f7bbc9cda79762) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c080becac4a0d2bc37f872d9b0bfd7e') in 0.000705 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 3.781813 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series
-  artifactKey: Guid(847cc52f269d0bd4580ef41f5cbf998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series using Guid(847cc52f269d0bd4580ef41f5cbf998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2bca1d7aa90efbde8df04890b5551c0') in 0.000456 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.396277 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bloom Cute Series
-  artifactKey: Guid(0759e1c921a97bb4c98c354ab596b99e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bloom Cute Series using Guid(0759e1c921a97bb4c98c354ab596b99e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b593f366059b93fd7094e43bc0514452') in 0.000682 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.183336 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bloom Cute Series/Prefabs
-  artifactKey: Guid(257c9710341fcbc499d827ebb99e39f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bloom Cute Series/Prefabs using Guid(257c9710341fcbc499d827ebb99e39f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a09cca1ad8279df602c3c90a9a4a1b0') in 0.000447 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.076282 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bloom Cute Series/Prefabs/Bloom.prefab
-  artifactKey: Guid(a87f651b28f3d234db143fa6b87bea0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bloom Cute Series/Prefabs/Bloom.prefab using Guid(a87f651b28f3d234db143fa6b87bea0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8de86adbdca093da8a8cdf0c7eeefc6d') in 0.240433 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 208
-========================================================================
-Received Import Request.
-  Time since last request: 5.377551 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series/Prefabs
-  artifactKey: Guid(375c51478fe05c64daf6aa9be92d80a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series/Prefabs using Guid(375c51478fe05c64daf6aa9be92d80a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8110943f937a6e171a214a0081201984') in 0.000575 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.069093 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series/Prefabs/Bud.prefab
-  artifactKey: Guid(740a91c480336b74387762edd492cb3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series/Prefabs/Bud.prefab using Guid(740a91c480336b74387762edd492cb3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68839045b17db1bba659d16c636c11eb') in 0.041175 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 154
-========================================================================
-Received Import Request.
-  Time since last request: 18.060844 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Blossom Cute Series/Prefabs/Blossom.prefab
-  artifactKey: Guid(f63c07a5cf11fc24ab3fbe7d2b76943e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Blossom Cute Series/Prefabs/Blossom.prefab using Guid(f63c07a5cf11fc24ab3fbe7d2b76943e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00f2359d380ff8dd0b265bd8926c0d03') in 0.056846 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 239
-========================================================================
-Received Import Request.
-  Time since last request: 132.264093 seconds.
-  path: Assets/Animator/Player/Spike/SpikeFinal.controller
-  artifactKey: Guid(876a923f6cffead4184841fdba4c13c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animator/Player/Spike/SpikeFinal.controller using Guid(876a923f6cffead4184841fdba4c13c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5a73b64ee31b6204518439474dc6041') in 0.001762 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 16.842717 seconds.
-  path: Assets/Animator/Player/Spike/BudAnimController.controller
-  artifactKey: Guid(c368068b4782fdb45a05a6246570fdf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animator/Player/Spike/BudAnimController.controller using Guid(c368068b4782fdb45a05a6246570fdf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82447af3a02c1a520a8271fc86767710') in 0.001297 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.489447 seconds.
-  path: Assets/Animator/Player/Spike/BudAnimController.controller
-  artifactKey: Guid(c368068b4782fdb45a05a6246570fdf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animator/Player/Spike/BudAnimController.controller using Guid(c368068b4782fdb45a05a6246570fdf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1835ec798d72f2886fca3cd632e9538') in 0.001140 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 10.084125 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series
-  artifactKey: Guid(bcbd1b7a9a2935e4aa9550d51b26bc03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series using Guid(bcbd1b7a9a2935e4aa9550d51b26bc03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fee79dffb56332c033bd2c0cd0135c62') in 0.000448 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.500904 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series/FBX
-  artifactKey: Guid(a8b9dbc0f8b8b694da03b1e69276f249) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series/FBX using Guid(a8b9dbc0f8b8b694da03b1e69276f249) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3566f11c0e282a3b25170f7ec83ad858') in 0.000447 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.121980 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series/FBX/Bud.FBX
-  artifactKey: Guid(2e7e8143db108b04f946266b19cb2144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series/FBX/Bud.FBX using Guid(2e7e8143db108b04f946266b19cb2144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c58b7bdbf17dee30e1ed95d2fa25076b') in 0.066624 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 70
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series/FBX/Bud@Fly Take Damage.FBX
-  artifactKey: Guid(e6a4aa34c78bea04fa020f6ce07f836e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series/FBX/Bud@Fly Take Damage.FBX using Guid(e6a4aa34c78bea04fa020f6ce07f836e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ac624a387384dac49f694ee0f95fc1e') in 0.040456 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 71
-========================================================================
-Received Import Request.
-  Time since last request: 0.000061 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series/FBX/Bud@Fly Die.FBX
-  artifactKey: Guid(07980652bbdaf784cac2a4077661b712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series/FBX/Bud@Fly Die.FBX using Guid(07980652bbdaf784cac2a4077661b712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8a08c53714272469b258d84165e6aa4') in 0.040792 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 71
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series/FBX/Bud@Fly Idle.FBX
-  artifactKey: Guid(4fc504f5e054158458cdd2c02798cff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series/FBX/Bud@Fly Idle.FBX using Guid(4fc504f5e054158458cdd2c02798cff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1276d62da2ae9346fba1cbd80f3dd234') in 0.036524 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 71
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series/FBX/Seed.FBX
-  artifactKey: Guid(9bae1121291d94a4bb66f854dcd26453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series/FBX/Seed.FBX using Guid(9bae1121291d94a4bb66f854dcd26453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cddb700831fca219cdd84b64af970902') in 0.022620 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series/FBX/Bud@Fly Turn Right.FBX
-  artifactKey: Guid(ad1afeafa2174a746a9e0984b2f13d37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series/FBX/Bud@Fly Turn Right.FBX using Guid(ad1afeafa2174a746a9e0984b2f13d37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f8c5ebc21763573db3a1f09b9fe0e44') in 0.042571 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 71
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series/FBX/Bud@Fly Forward In Place.FBX
-  artifactKey: Guid(146e821f6592ea84980427a7ae9acd04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series/FBX/Bud@Fly Forward In Place.FBX using Guid(146e821f6592ea84980427a7ae9acd04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13f3a769ff80a6fad612e84874913982') in 0.042007 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 71
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series/FBX/Bud@Fly Projectile Forward.FBX
-  artifactKey: Guid(1a280d0c0e953834f99e2be01c4560a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series/FBX/Bud@Fly Projectile Forward.FBX using Guid(1a280d0c0e953834f99e2be01c4560a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c97e5d4ad1cd5300eed7bdc342a46cf3') in 0.041913 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 71
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series/FBX/Bud@Fly Projectile Upward.FBX
-  artifactKey: Guid(dade22600d3f0c042896a0f593f06cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series/FBX/Bud@Fly Projectile Upward.FBX using Guid(dade22600d3f0c042896a0f593f06cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04bf8c10900ca95cd1048e87f7a198d9') in 0.043707 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 71
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series/FBX/Bud@Fly Slash Attack.FBX
-  artifactKey: Guid(7ff41167d152e1b419456daad80bb749) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series/FBX/Bud@Fly Slash Attack.FBX using Guid(7ff41167d152e1b419456daad80bb749) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6645b1bb085754ef661ea24e1753ce1d') in 0.038061 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 71
-========================================================================
-Received Import Request.
-  Time since last request: 65.456495 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series/FBX/Bud@Fly Projectile Forward.FBX
-  artifactKey: Guid(1a280d0c0e953834f99e2be01c4560a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bud Cute Series/FBX/Bud@Fly Projectile Forward.FBX using Guid(1a280d0c0e953834f99e2be01c4560a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a4305ece9b4ecb6fad45c5645978dde') in 0.038747 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 71
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.535 seconds
-Refreshing native plugins compatible for Editor in 4.58 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.144 seconds
-Domain Reload Profiling: 1679ms
-	BeginReloadAssembly (199ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (37ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (28ms)
-	LoadAllAssembliesAndSetupDomain (262ms)
-		LoadAssemblies (374ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (16ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (1145ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (440ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (29ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (72ms)
-			ProcessInitializeOnLoadAttributes (304ms)
-			ProcessInitializeOnLoadMethodAttributes (24ms)
-			AfterProcessingInitializeOnLoad (8ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (20ms)
-Refreshing native plugins compatible for Editor in 6.05 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3246 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (30.2 KB). Loaded Objects now: 3759.
-Memory consumption went from 137.4 MB to 137.4 MB.
-Total: 4.225400 ms (FindLiveObjects: 0.315000 ms CreateObjectMapping: 0.265200 ms MarkObjects: 3.586200 ms  DeleteObjects: 0.057700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.543 seconds
-Refreshing native plugins compatible for Editor in 4.43 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.160 seconds
-Domain Reload Profiling: 1702ms
-	BeginReloadAssembly (204ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (37ms)
-	RebuildCommonClasses (48ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (251ms)
-		LoadAssemblies (365ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (15ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (1161ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (447ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (30ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (75ms)
-			ProcessInitializeOnLoadAttributes (309ms)
-			ProcessInitializeOnLoadMethodAttributes (26ms)
-			AfterProcessingInitializeOnLoad (4ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (20ms)
-Refreshing native plugins compatible for Editor in 5.45 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3246 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (30.2 KB). Loaded Objects now: 3762.
-Memory consumption went from 139.4 MB to 139.3 MB.
-Total: 5.188900 ms (FindLiveObjects: 0.393800 ms CreateObjectMapping: 0.762800 ms MarkObjects: 3.964000 ms  DeleteObjects: 0.066400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.517 seconds
-Refreshing native plugins compatible for Editor in 4.35 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.143 seconds
-Domain Reload Profiling: 1659ms
-	BeginReloadAssembly (199ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (38ms)
-	RebuildCommonClasses (35ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (26ms)
-	LoadAllAssembliesAndSetupDomain (241ms)
-		LoadAssemblies (350ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (16ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (1144ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (426ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (26ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (64ms)
-			ProcessInitializeOnLoadAttributes (301ms)
-			ProcessInitializeOnLoadMethodAttributes (27ms)
-			AfterProcessingInitializeOnLoad (5ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (20ms)
-Refreshing native plugins compatible for Editor in 6.07 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3246 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (30.1 KB). Loaded Objects now: 3765.
-Memory consumption went from 141.3 MB to 141.3 MB.
-Total: 4.249500 ms (FindLiveObjects: 0.335700 ms CreateObjectMapping: 0.321000 ms MarkObjects: 3.537200 ms  DeleteObjects: 0.054600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.528 seconds
-Refreshing native plugins compatible for Editor in 4.70 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.140 seconds
-Domain Reload Profiling: 1667ms
-	BeginReloadAssembly (203ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (41ms)
-	RebuildCommonClasses (36ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (249ms)
-		LoadAssemblies (357ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (20ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (12ms)
-	FinalizeReload (1140ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (431ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (28ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (61ms)
-			ProcessInitializeOnLoadAttributes (310ms)
-			ProcessInitializeOnLoadMethodAttributes (26ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (22ms)
-Refreshing native plugins compatible for Editor in 5.75 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3246 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (30.2 KB). Loaded Objects now: 3768.
-Memory consumption went from 143.2 MB to 143.2 MB.
-Total: 4.909600 ms (FindLiveObjects: 0.449900 ms CreateObjectMapping: 0.328700 ms MarkObjects: 4.065300 ms  DeleteObjects: 0.064300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 136.651168 seconds.
-  path: Assets/Animator/Player/Flowers
-  artifactKey: Guid(fe152fd00a7eb1b4aa9899434b93506c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animator/Player/Flowers using Guid(fe152fd00a7eb1b4aa9899434b93506c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fab16f9183ace4993c19fdc82221907') in 0.001902 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 9.302895 seconds.
-  path: Assets/Animator/Player/Flowers/BloomAnimController.controller
-  artifactKey: Guid(a871bb96ab0a82d41af2becd74634bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animator/Player/Flowers/BloomAnimController.controller using Guid(a871bb96ab0a82d41af2becd74634bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d2e27137dc22ec26e775fc1d8331618') in 0.009715 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.274284 seconds.
-  path: Assets/Animator/Player/Flowers/BloomAnimController.controller
-  artifactKey: Guid(a871bb96ab0a82d41af2becd74634bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animator/Player/Flowers/BloomAnimController.controller using Guid(a871bb96ab0a82d41af2becd74634bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62b4a5b3d1083b83ba420e6a631ff69f') in 0.001029 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 10.627617 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bloom Cute Series/FBX/Bloom.FBX
-  artifactKey: Guid(f3a9d63130d316f4fa89c717a14a4ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bloom Cute Series/FBX/Bloom.FBX using Guid(f3a9d63130d316f4fa89c717a14a4ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84f8d3f24662e7bc13fc8d45127d0eb4') in 0.129989 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 132
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bloom Cute Series/FBX/Bloom@Spawn.FBX
-  artifactKey: Guid(2305a0702a1c1a04993db750735edffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bloom Cute Series/FBX/Bloom@Spawn.FBX using Guid(2305a0702a1c1a04993db750735edffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa1924f595419d90143e5c5599f90504') in 0.060266 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 133
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bloom Cute Series/FBX/Bloom@Run Forward In Place.FBX
-  artifactKey: Guid(103f6b7a4df96d14c8a750f99f401f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bloom Cute Series/FBX/Bloom@Run Forward In Place.FBX using Guid(103f6b7a4df96d14c8a750f99f401f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41004df2588a87009aac345994c2e3ad') in 0.051538 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 133
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bloom Cute Series/FBX/Bloom@Walk Forward W Root.FBX
-  artifactKey: Guid(83d2b6aa0816df64386ea5fef8d63b53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bloom Cute Series/FBX/Bloom@Walk Forward W Root.FBX using Guid(83d2b6aa0816df64386ea5fef8d63b53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9773735caa5eb90f73e5eab2096391fd') in 0.050791 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 133
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bloom Cute Series/FBX/Seed.FBX
-  artifactKey: Guid(fdb68749cc16a554191a5b32dcf4c173) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bloom Cute Series/FBX/Seed.FBX using Guid(fdb68749cc16a554191a5b32dcf4c173) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2699ba49400676877dc6b522010ee427') in 0.021429 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bloom Cute Series/FBX/Bloom@Projectile Attack Upward.FBX
-  artifactKey: Guid(cfee7c48c6233e24ca4362ecb6f4f637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bloom Cute Series/FBX/Bloom@Projectile Attack Upward.FBX using Guid(cfee7c48c6233e24ca4362ecb6f4f637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f9aa9752a44081bc2a2b77a7f85f1ed') in 0.050098 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 133
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bloom Cute Series/FBX/Bloom@Run Forward W Root.FBX
-  artifactKey: Guid(ee3f2c5faf549524a92652ae07a0c950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bloom Cute Series/FBX/Bloom@Run Forward W Root.FBX using Guid(ee3f2c5faf549524a92652ae07a0c950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4edfa52870f275de05cf91ba381eef5') in 0.047688 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 133
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bloom Cute Series/FBX/Bloom@Walk Forward In Place.FBX
-  artifactKey: Guid(203ba7013bdc7e44c8c41bffb6cbde87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bloom Cute Series/FBX/Bloom@Walk Forward In Place.FBX using Guid(203ba7013bdc7e44c8c41bffb6cbde87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69584d48c1f97d23905a836e3bce0c80') in 0.049307 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 133
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bloom Cute Series/FBX/Bloom@Turn Right.FBX
-  artifactKey: Guid(e12a04fcfb9a5e14987801a509269916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bloom Cute Series/FBX/Bloom@Turn Right.FBX using Guid(e12a04fcfb9a5e14987801a509269916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '086f7c37877e1fcc18d1022d5e579183') in 0.052262 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 135
-========================================================================
-Received Import Request.
-  Time since last request: 31.962925 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bloom Cute Series/FBX/Bloom@Projectile Attack Forward.FBX
-  artifactKey: Guid(62783596cf9b39a49b77b38c2d8bd621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bloom Cute Series/FBX/Bloom@Projectile Attack Forward.FBX using Guid(62783596cf9b39a49b77b38c2d8bd621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c200dbe99661771de380ffc09b48dc1') in 0.042627 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 133
-========================================================================
-Received Import Request.
-  Time since last request: 1.146207 seconds.
-  path: Assets/Animator/Player/Flowers/BloomAnimController.controller
-  artifactKey: Guid(a871bb96ab0a82d41af2becd74634bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animator/Player/Flowers/BloomAnimController.controller using Guid(a871bb96ab0a82d41af2becd74634bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc256bdc48bcbd7bd5629d4a600865be') in 0.002418 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.540 seconds
-Refreshing native plugins compatible for Editor in 5.88 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.169 seconds
-Domain Reload Profiling: 1709ms
-	BeginReloadAssembly (212ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (39ms)
-	RebuildCommonClasses (39ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (26ms)
-	LoadAllAssembliesAndSetupDomain (251ms)
-		LoadAssemblies (375ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (16ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (1170ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (419ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (27ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (62ms)
-			ProcessInitializeOnLoadAttributes (300ms)
-			ProcessInitializeOnLoadMethodAttributes (24ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (20ms)
-Refreshing native plugins compatible for Editor in 5.98 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3246 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (30.3 KB). Loaded Objects now: 3771.
-Memory consumption went from 145.5 MB to 145.4 MB.
-Total: 4.667700 ms (FindLiveObjects: 0.356900 ms CreateObjectMapping: 0.449200 ms MarkObjects: 3.797200 ms  DeleteObjects: 0.063200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 141.331545 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Blossom Cute Series/FBX/Blossom.FBX
-  artifactKey: Guid(c32a798d5b32a2a498011b3ad3a31c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Blossom Cute Series/FBX/Blossom.FBX using Guid(c32a798d5b32a2a498011b3ad3a31c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'befe58dea2c8ecf79837a58bd34abdaa') in 0.154691 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 168
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Blossom Cute Series/FBX/Blossom@Die.FBX
-  artifactKey: Guid(ec38d706ca13f4f458082135e52d177f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Blossom Cute Series/FBX/Blossom@Die.FBX using Guid(ec38d706ca13f4f458082135e52d177f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ac80897f1b2f2aa0abf49fc9fc6b013') in 0.064384 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 169
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Blossom Cute Series/FBX/Blossom@Idle.FBX
-  artifactKey: Guid(e4e2f4887605ec449b37f9ac3311343a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Blossom Cute Series/FBX/Blossom@Idle.FBX using Guid(e4e2f4887605ec449b37f9ac3311343a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcc1796aa5890dd63e385b88c5b27488') in 0.054487 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 169
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Blossom Cute Series/FBX/Blossom@Projectile Attack Upward.FBX
-  artifactKey: Guid(670ce850bd6a6424c82e79047cd7d337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Blossom Cute Series/FBX/Blossom@Projectile Attack Upward.FBX using Guid(670ce850bd6a6424c82e79047cd7d337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89d1fcdcc55507be2a96dc66e0a0c2c3') in 0.053248 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 169
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Blossom Cute Series/FBX/Blossom@Run Forward In Place.FBX
-  artifactKey: Guid(3f893465c344e8446a7119436bca1736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Blossom Cute Series/FBX/Blossom@Run Forward In Place.FBX using Guid(3f893465c344e8446a7119436bca1736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb50348ec46bf7d73dc89f5e508c336f') in 0.054401 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 169
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Blossom Cute Series/FBX/Blossom@Walk Forward W Root.FBX
-  artifactKey: Guid(f134805aff080224d8bd4c91fc21d219) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Blossom Cute Series/FBX/Blossom@Walk Forward W Root.FBX using Guid(f134805aff080224d8bd4c91fc21d219) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2433757a3aa15282189b420b06ea8e6') in 0.056594 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 169
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Blossom Cute Series/FBX/Blossom@Underground.FBX
-  artifactKey: Guid(79700ec33fe6149499f35405e08a4fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Blossom Cute Series/FBX/Blossom@Underground.FBX using Guid(79700ec33fe6149499f35405e08a4fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16b0f26b741994b97e7860916cc8aedc') in 0.061456 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 169
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Blossom Cute Series/FBX/Blossom@Run Forward W Root.FBX
-  artifactKey: Guid(5ee5a4de9691b6642a92ef8b24c564e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Blossom Cute Series/FBX/Blossom@Run Forward W Root.FBX using Guid(5ee5a4de9691b6642a92ef8b24c564e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bda6438656766ce9b0ee3f803936d497') in 0.055226 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 169
-========================================================================
-Received Import Request.
-  Time since last request: 4.226603 seconds.
-  path: Assets/Animator/Player/Flowers/BudAnimController.controller
-  artifactKey: Guid(c368068b4782fdb45a05a6246570fdf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animator/Player/Flowers/BudAnimController.controller using Guid(c368068b4782fdb45a05a6246570fdf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b8203a8c52fff35386bf290613b3fa0') in 0.002553 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time since last request: 14.621793 seconds.
-  path: Assets/Animator/Player/Flowers/BlossomAnimController.controller
-  artifactKey: Guid(b485836333bc2544db96b1426d54bb57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animator/Player/Flowers/BlossomAnimController.controller using Guid(b485836333bc2544db96b1426d54bb57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c153ce2f8d6ca6620a76125764de68d2') in 0.001211 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.200746 seconds.
-  path: Assets/Animator/Player/Flowers/BlossomAnimController.controller
-  artifactKey: Guid(b485836333bc2544db96b1426d54bb57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animator/Player/Flowers/BlossomAnimController.controller using Guid(b485836333bc2544db96b1426d54bb57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35df04780f69287f0301dc90dad32d13') in 0.001361 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 43.239537 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Blossom Cute Series/FBX/Blossom@Projectile Attack Forward.FBX
-  artifactKey: Guid(05158e991381ca84188b2c8cec72e35e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Blossom Cute Series/FBX/Blossom@Projectile Attack Forward.FBX using Guid(05158e991381ca84188b2c8cec72e35e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56865b1901a00f45a4d9f207c29bca89') in 0.050945 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 169
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.534 seconds
-Refreshing native plugins compatible for Editor in 3.97 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.149 seconds
-Domain Reload Profiling: 1682ms
-	BeginReloadAssembly (206ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (41ms)
-	RebuildCommonClasses (45ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (244ms)
-		LoadAssemblies (361ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (16ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (1149ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (442ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (30ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (64ms)
-			ProcessInitializeOnLoadAttributes (313ms)
-			ProcessInitializeOnLoadMethodAttributes (28ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (17ms)
-Refreshing native plugins compatible for Editor in 5.86 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3246 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (30.3 KB). Loaded Objects now: 3774.
-Memory consumption went from 147.7 MB to 147.7 MB.
-Total: 3.848400 ms (FindLiveObjects: 0.319400 ms CreateObjectMapping: 0.265800 ms MarkObjects: 3.209600 ms  DeleteObjects: 0.052300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 66.892899 seconds.
-  path: Assets/Prefabs/Player/Bud_Player.prefab
-  artifactKey: Guid(63e47741fb8d6e645a3f571ea79c7ecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player/Bud_Player.prefab using Guid(63e47741fb8d6e645a3f571ea79c7ecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5c4923dad0881a610f7565d31eac84b') in 0.111240 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Prefabs/Player/Blossom_Player.prefab
-  artifactKey: Guid(da99c921d471c4c40a1b53d39ca5955e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player/Blossom_Player.prefab using Guid(da99c921d471c4c40a1b53d39ca5955e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50f63fe3f4c193a664cd2f017d99f93e') in 0.022148 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 180
-========================================================================
-Received Import Request.
-  Time since last request: 18.545146 seconds.
-  path: Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bloom Cute Series/Prefabs/Bloom.prefab
-  artifactKey: Guid(a87f651b28f3d234db143fa6b87bea0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerAsset/Bud Bloom Blossom Evolution Pack Cute Series/Bloom Cute Series/Prefabs/Bloom.prefab using Guid(a87f651b28f3d234db143fa6b87bea0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a687ecfd1727c89f9b5943d81efae81a') in 0.032685 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 208
-========================================================================
-Received Import Request.
-  Time since last request: 76.246017 seconds.
-  path: Assets/Prefabs/Player/Seed_PlayerProjectile.prefab
-  artifactKey: Guid(c6293c10e81023843b8acf8a7c055f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player/Seed_PlayerProjectile.prefab using Guid(c6293c10e81023843b8acf8a7c055f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73d44dd62717665b1e343f0d1e35f514') in 0.026145 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.591 seconds
-Refreshing native plugins compatible for Editor in 5.35 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.144 seconds
-Domain Reload Profiling: 1735ms
-	BeginReloadAssembly (223ms)
+- Finished resetting the current domain, in  0.667 seconds
+Domain Reload Profiling: 1457ms
+	BeginReloadAssembly (197ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (38ms)
-	RebuildCommonClasses (36ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (26ms)
-	LoadAllAssembliesAndSetupDomain (293ms)
-		LoadAssemblies (404ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (46ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (486ms)
+		LoadAssemblies (385ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (37ms)
-			TypeCache.Refresh (14ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (10ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (1145ms)
+		AnalyzeDomain (228ms)
+			TypeCache.Refresh (203ms)
+				TypeCache.ScanAssembly (178ms)
+			ScanForSourceGeneratedMonoScriptInfo (18ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (668ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (402ms)
+		SetupLoadedEditorAssemblies (467ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (24ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (27ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (55ms)
-			ProcessInitializeOnLoadAttributes (292ms)
-			ProcessInitializeOnLoadMethodAttributes (24ms)
+			BeforeProcessingInitializeOnLoad (63ms)
+			ProcessInitializeOnLoadAttributes (344ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
 			AfterProcessingInitializeOnLoad (4ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (18ms)
-Refreshing native plugins compatible for Editor in 5.70 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (19ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 14.89 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3246 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (30.2 KB). Loaded Objects now: 3777.
-Memory consumption went from 149.7 MB to 149.6 MB.
-Total: 4.075600 ms (FindLiveObjects: 0.351900 ms CreateObjectMapping: 0.328300 ms MarkObjects: 3.340900 ms  DeleteObjects: 0.053200 ms)
+Unloading 3273 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (57.4 KB). Loaded Objects now: 3744.
+Memory consumption went from 140.0 MB to 140.0 MB.
+Total: 6.216700 ms (FindLiveObjects: 0.348100 ms CreateObjectMapping: 0.405700 ms MarkObjects: 5.330500 ms  DeleteObjects: 0.131300 ms)
 
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -1059,3 +178,75 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 4516.799483 seconds.
+  path: Assets/Material/Pavement textures pack/pavement 06/diffuse.tga
+  artifactKey: Guid(4e5f0468f2089df459ae2ee636f9ba67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Pavement textures pack/pavement 06/diffuse.tga using Guid(4e5f0468f2089df459ae2ee636f9ba67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d732ff207ffcce5953908e525d4c44c') in 0.151194 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Material/Pavement textures pack/pavement 06/normal.tga
+  artifactKey: Guid(8b5d59ee89c3b324c9252dd6a886957d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Pavement textures pack/pavement 06/normal.tga using Guid(8b5d59ee89c3b324c9252dd6a886957d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '410425dd6c516c209384bd032e7d207e') in 0.064411 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Material/Pavement textures pack/pavement 06/preview.jpg
+  artifactKey: Guid(32a87343538c2704aa993913e7dce389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Pavement textures pack/pavement 06/preview.jpg using Guid(32a87343538c2704aa993913e7dce389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f96e3840927a7246b7a275cf4d37bccd') in 0.049098 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Material/Pavement textures pack/pavement 14/normal.tga
+  artifactKey: Guid(f5d47122cda69884098020f316fc3b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Pavement textures pack/pavement 14/normal.tga using Guid(f5d47122cda69884098020f316fc3b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9cdac11ea4dc1de574e279160eeee7f') in 0.022435 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Material/Pavement textures pack/pavement 06/pavement pattern 06.mat
+  artifactKey: Guid(c44ee7308fa9483489d2b5ed1a88ba0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Pavement textures pack/pavement 06/pavement pattern 06.mat using Guid(c44ee7308fa9483489d2b5ed1a88ba0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd03913d80db5f4d30381bc2b552679ad') in 0.088520 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 3.430593 seconds.
+  path: Assets/Material/Pavement textures pack/pavement 05/diffuse.tga
+  artifactKey: Guid(ef0590ab2349b81469208403abb35112) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Pavement textures pack/pavement 05/diffuse.tga using Guid(ef0590ab2349b81469208403abb35112) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f3299b89bc7c02073abdd9ba7cc6ba3') in 0.019402 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000756 seconds.
+  path: Assets/Material/Pavement textures pack/pavement 05/normal.tga
+  artifactKey: Guid(39d3dcc278042be4c9fc30d1142a2b7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Pavement textures pack/pavement 05/normal.tga using Guid(39d3dcc278042be4c9fc30d1142a2b7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6df3fce13e1f94805e3bc6dc3bc75281') in 0.018233 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.033767 seconds.
+  path: Assets/Material/Pavement textures pack/pavement 05/preview.jpg
+  artifactKey: Guid(1109efff481678349885a3b2a02bcd25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Pavement textures pack/pavement 05/preview.jpg using Guid(1109efff481678349885a3b2a02bcd25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '772b02910b14a84d51728072d6b88ab6') in 0.013386 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.006970 seconds.
+  path: Assets/Material/Pavement textures pack/pavement 05/specular.tga
+  artifactKey: Guid(7e885c165e9050f4380f8f29c5fdf381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Pavement textures pack/pavement 05/specular.tga using Guid(7e885c165e9050f4380f8f29c5fdf381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9f50ba8023539398e4439953d0449b9') in 0.018165 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2

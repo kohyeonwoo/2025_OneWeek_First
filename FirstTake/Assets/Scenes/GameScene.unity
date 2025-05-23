@@ -1772,16 +1772,6 @@ MonoBehaviour:
   endGamePanel: {fileID: 2011122245}
   changeParticle: {fileID: 7226888052703040409, guid: 7ec363c8df426644ea85f8d6d570561c, type: 3}
   changeParticleLocation: {fileID: 693429516}
-  spirits:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Monsters_Spike:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   playerMoneyText: {fileID: 1394186054}
   randomNum: 0
   playerMoney: 0
@@ -4753,7 +4743,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7109734181865272641, guid: 63e47741fb8d6e645a3f571ea79c7ecb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
